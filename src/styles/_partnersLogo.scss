@@ -1,0 +1,24 @@
+.partnersLogo_section {
+    @include displayFlex(column, center, center);
+    gap: 2rem;
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+
+    & .partnersLogo_list {
+        @include displayFlex(row, center, center);
+        gap: 1rem;
+        width: 100%;
+        flex-wrap: wrap;
+
+        & .partnersLogo_list_item {
+            width: 25%;
+
+            & img {
+                width: 100%;
+                border: 0.1rem solid var(--secundary-color);
+                border-radius: 1rem;
+            }
+        }
+    }
+}

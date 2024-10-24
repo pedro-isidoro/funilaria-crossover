@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "imageUrl": "/images/logo/clients/allianz.webp",
+        "altText": "allianz logo"
+    },
+    {
+        "id": 2,
+        "imageUrl": "/images/logo/clients/azulseguros.webp",
+        "altText": "azul seguros logo"
+    },
+    {
+        "id": 3,
+        "imageUrl": "/images/logo/clients/hdi.webp",
+        "altText": "hdi logo"
+    },
+    {
+        "id": 4,
+        "imageUrl": "/images/logo/clients/liberty.webp",
+        "altText": "liberty logo"
+    },
+    {
+        "id": 5,
+        "imageUrl": "/images/logo/clients/mapfre-seguradora.webp",
+        "altText": "mapfre seguradora logo"
+    },
+    {
+        "id": 6,
+        "imageUrl": "/images/logo/clients/maritima.webp",
+        "altText": "maritima logo"
+    },
+    {
+        "id": 7,
+        "imageUrl": "/images/logo/clients/porto-seguro.webp",
+        "altText": "porto seguro logo"
+    },
+    {
+        "id": 8,
+        "imageUrl": "/images/logo/clients/sulamerica.webp",
+        "altText": "sulamerica logo"
+    },
+    {
+        "id": 9,
+        "imageUrl": "/images/logo/clients/tokiomarine.webp",
+        "altText": "tokiomarine logo"
+    },
+    {
+        "id": 10,
+        "imageUrl": "/images/logo/clients/zurich.webp",
+        "altText": "zurich logo"
+    }
+]

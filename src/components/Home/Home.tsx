@@ -1,6 +1,10 @@
 import { Employers } from "@/components/Employers/Employers";
 import { Reviews } from "@/components/Reviews/Reviews";
 import { Services } from "@/components/AllServices/Services";
+import { ClietsLogo } from "@/components/ClietsLogo/ClietsLogo";
+import clientsData from "@/json/ClientsLogo.json"
+import { PartnersLogo } from "@/components/PartnersLogo/PartnersLogo";
+import partnersData from "@/json/partnersLogo.json"
 
 export const Home = () => {
 
@@ -17,6 +21,8 @@ export const Home = () => {
       <Services />
         <h2 className="reviews_title">Comentários</h2>
       <Reviews />
+      <ClietsLogo items={clientsData} />
+      <PartnersLogo items={partnersData} />
     </section>
   )
 }

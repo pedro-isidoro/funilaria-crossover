@@ -11,8 +11,8 @@ export const Footer = () => {
         <nav className="footer_navegation">
           <Link to={"/"} className="footer_navegation_item">Home</Link>
           <Link to={"/quem-nos-somos"} className="footer_navegation_item">Quem Somos</Link>
-          <Link to={"/"} className="footer_navegation_item">Reparos</Link>
-          <Link to={"/"} className="footer_navegation_item">Estilização</Link>
+          <a href="#services"  className="footer_navegation_item">Reparos</a>
+          <a href="#services"  className="footer_navegation_item">Estilização</a>
         </nav>
         <div className="footer_second_section">
           <ul className="nets">

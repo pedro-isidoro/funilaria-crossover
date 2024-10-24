@@ -1,0 +1,53 @@
+//Carrossel
+.section_imageSwiper{
+    width: 100%;
+    position: relative;
+    & .ImageSwiper_list {
+        width: 100%;
+        height: 30rem;
+
+        & .ImageSwiper_item {
+            @include displayFlex(row, center, center);
+            width: 100%;
+
+            & .ImageSwiper_card {
+                @include displayFlex(row, center, center);
+                width: 85%;
+
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//Arrows
+#swiperRightArrow,
+#swiperLeftArrow {
+    color: var(--terciary-color);
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+#swiperRightArrow {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#swiperLeftArrow {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

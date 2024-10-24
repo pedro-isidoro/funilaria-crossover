@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "imageUrl": "/images/logo/partners/3m.webp",
+        "altText": "3m logo"
+    },
+    {
+        "id": 2,
+        "imageUrl": "/images/logo/partners/belatintas.webp",
+        "altText": "belatintas seguros logo"
+    },
+    {
+        "id": 3,
+        "imageUrl": "/images/logo/partners/ppg.webp",
+        "altText": "ppg logo"
+    },
+    {
+        "id": 4,
+        "imageUrl": "/images/logo/partners/sikkens.webp",
+        "altText": "sikkens logo"
+    }
+]

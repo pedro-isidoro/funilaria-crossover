@@ -1,14 +1,28 @@
 .WhoAreWe_section{
     @include displayFlex(column, center, center);
     gap: 4rem;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    padding: 0 3rem;
+    padding-top: 4rem;
+    border-bottom: 0.1rem solid var(--primary-color);
     & h2{
+        padding: 0 3rem;
         font-size: 3rem;
     }
     & p{
+        padding: 0 3rem;
         text-align: justify;
         font-size: 2rem;
+    }
+}
+
+.second_WhoAreWe_section{
+    margin-top: 3rem;
+    & h2{
+        width: 100%;
+        padding-top: 2rem;
+        background: var(--secundary-color);
+        text-align: center;
+        color: var(--primary-color);
     }
 }

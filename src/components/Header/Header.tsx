@@ -26,8 +26,8 @@ export const Header = () => {
             <div className="menu_navegation_items">
               <Link to={"/"} className="menu_navegation_item">Home</Link>
               <Link to={"/quem-nos-somos"} className="menu_navegation_item">Quem Somos</Link>
-              <Link to={"/"} className="menu_navegation_item">Reparos</Link>
-              <Link to={"/"} className="menu_navegation_item">Estilização</Link>
+              <a href="#services" className="menu_navegation_item">Reparos</a>
+              <a href="#services" className="menu_navegation_item">Estilização</a>
             </div>
           </nav>
         ) : (
