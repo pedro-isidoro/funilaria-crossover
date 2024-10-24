@@ -1,6 +1,6 @@
 import { Employers } from "@/components/Employers/Employers";
 import { Reviews } from "@/components/Reviews/Reviews";
-import { Services } from "@/components/Services/services";
+import { Services } from "@/components/AllServices/Services";
 
 export const Home = () => {
 
