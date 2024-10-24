@@ -7,7 +7,7 @@ export const Header = () => {
   const [menuOpen, SetMenuOpen] = useState(false)
   return (
     <header className="header_section">
-      <img src="/images/logo/logo-crossover.jpeg"/>
+      <Link className="linkImage" to={"/"}><img src="/images/logo/logo-crossover.jpeg"/></Link>
       <section className="header_second_section">
         <ul className="header_infos">
           <li className="header_infos_item"><p>Fone 1: <span>(11) 4330-0672</span></p></li>

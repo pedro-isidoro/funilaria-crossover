@@ -5,9 +5,9 @@ export const Footer = () => {
   return (
     <footer className="footer_section">
       <section className="footer_first_section">
-        <div className="Image_section">
+        <Link to={"/"} className="Image_section">
           <img src="/images/logo/logo-crossover.jpeg"/>
-        </div>
+        </Link>
         <nav className="footer_navegation">
           <Link to={"/"} className="footer_navegation_item">Home</Link>
           <Link to={"/quem-nos-somos"} className="footer_navegation_item">Quem Somos</Link>
