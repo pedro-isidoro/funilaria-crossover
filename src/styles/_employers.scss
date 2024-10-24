@@ -1,0 +1,56 @@
+//Second Section
+.section_employers {
+    width: 100%;
+    padding: 2rem 1rem 6rem 1rem;
+    @include displayFlex(row, center, center);
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    & .employer_card {
+        @include displayFlex(column, center, center);
+        gap: 2rem;
+        width: 25rem;
+        height: 40rem;
+        background: rgba(247, 220, 210, 0.499);
+        border-radius: 1rem;
+        padding: 1rem;
+
+        & img {
+            width: 13rem;
+            height: 13rem;
+            border-radius: 50%;
+        }
+
+        & .employer_card_texts {
+            padding: 0 1rem;
+            @include displayFlex(column, center, center);
+            gap: 1rem;
+
+            // text-align: center;
+            & h4 {
+                font-size: 2rem;
+            }
+
+            & p {
+                text-align: justify;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    & .employer_card_nets {
+        @include displayFlex(row, center, center);
+
+        & .employer_card_net_item {
+            & a {
+                color: var(--insta-color);
+                font-size: 4rem;
+
+                &:hover {
+                    cursor: pointer;
+                    color: var(--terciary-color);
+                }
+            }
+        }
+    }
+}

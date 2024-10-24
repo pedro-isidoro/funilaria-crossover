@@ -1,0 +1,53 @@
+//third Section
+.services_title {
+    background: var(--secundary-color);
+    color: var(--primary-color);
+    padding: 3rem 0;
+}
+
+.section_services {
+    width: 100%;
+    max-height: 100vh;
+    background: #000;
+    padding: 4rem 1rem 6rem 1rem;
+
+    & .services_list {
+        width: 100%;
+        @include displayFlex(row, center, center);
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 1.5rem;
+
+        & .services_list_service {
+            @include displayFlex(column, space-evenly, center);
+            gap: 1rem;
+            width: 13rem;
+            height: 13rem;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.897);
+
+            & p {
+                font-size: 1.4rem;
+            }
+
+            & .link_know_more {
+                font-size: 1.4rem;
+                color: var(--terciary-color);
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        & .carIcon1,
+        .carIcon2,
+        .carIcon3,
+        .carIcon4,
+        .carIcon5,
+        .carIcon6,
+        .carIcon7 {
+            font-size: 2.4rem;
+        }
+    }
+}

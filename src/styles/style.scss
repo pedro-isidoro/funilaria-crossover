@@ -1,0 +1,12 @@
+@import './reset';
+@import './variables';
+@import './header';
+@import './home';
+@import './employers';
+@import './services';
+@import './reviews';
+@import './footer';
+
+.main_content {
+    background: var(--primary-color);
+}

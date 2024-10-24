@@ -1,0 +1,51 @@
+.home_container{
+    min-height: 100vh;
+    width: 100%;
+    & h2{
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem;
+    }
+}
+//First Section
+.section_introducing {
+    @include displayFlex(column, center, center);
+    gap: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 36rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 1);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: no-repeat center/100% url("/images/services/funilaria1.avif");
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    & h5 {
+        font-size: 1.2rem;
+    }
+    
+    & h2 {
+        font-size: 1.5rem;
+        color: var(--terciary-color);
+    }
+
+    & p {
+        font-size: 1.6rem;
+    }
+}
+
+.employers_title, .reviews_title {
+    padding: 4rem 0 2rem 0;
+}
