@@ -20,15 +20,14 @@
             @include displayFlex(row, center, center);
             width: 100%;
             
-            & img{
-                width: 60%;
-
-                @include respond-to(medium) {
-                    width: 85%;
-                }
+            & img {
+                width: 78%;
+                width: 10rem;
+                height: 5rem;
         
-                @include respond-to(large) {
-                    width: 90%;
+                @include respond-to(medium) {
+                    width: 15rem;
+                    height: 8rem;
                 }
             }
         }

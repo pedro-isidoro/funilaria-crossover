@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="footer_section">
       <section className="footer_first_section">
         <Link to={"/"} className="Image_section">
-          <img src="/images/logo/logo-crossover.jpeg"/>
+          <img src="/images/logo/logo-crossover.jpeg" alt="logo Image"/>
         </Link>
         <nav className="footer_navegation">
           <Link to={"/"} className="footer_navegation_item">Home</Link>
@@ -17,8 +17,8 @@ export const Footer = () => {
         </nav>
         <div className="footer_second_section">
           <ul className="nets">
-            <li className="net_item"><a href="" target="_blank"><FaInstagram className="insta"/></a></li>
-            <li className="net_item"><a href="" target="_blank"><FaWhatsapp className="whats"/></a></li>
+            <li className="net_item"><a href="" target="_blank" className="instagram Link"><FaInstagram className="insta"/></a></li>
+            <li className="net_item"><a href="" target="_blank" className="whtatsApp Link"><FaWhatsapp className="whats"/></a></li>
           </ul>
         </div>
       </section>

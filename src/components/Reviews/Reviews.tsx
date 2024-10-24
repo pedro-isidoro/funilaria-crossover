@@ -21,8 +21,8 @@ export const Reviews = () => {
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">
-                      <img src="images/donos/Foto-minha.jpg" alt="Client image 1" />
-                      <span><IoStarSharp/></span>
+                      <img src="images/donos/Foto-minha.webp" alt="Client image 1" />
+                      <span className="star Icon"><IoStarSharp/></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
                   </div>
@@ -30,8 +30,8 @@ export const Reviews = () => {
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">
-                      <img src="images/donos/Foto-minha.jpg" alt="Client image 2" />
-                      <span><IoStarSharp/><IoStarSharp/></span>
+                      <img src="images/donos/Foto-minha.webp" alt="Client image 2" />
+                      <span className="star Icon"><IoStarSharp/><IoStarSharp/></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
                   </div>
@@ -39,8 +39,8 @@ export const Reviews = () => {
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">
-                      <img src="images/donos/Foto-minha.jpg" alt="Client image 3" />
-                      <span><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                      <img src="images/donos/Foto-minha.webp" alt="Client image 3" />
+                      <span className="star Icon"><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
                   </div>
@@ -48,8 +48,8 @@ export const Reviews = () => {
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">
-                      <img src="images/donos/Foto-minha.jpg" alt="Client image 4" />
-                      <span><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                      <img src="images/donos/Foto-minha.webp" alt="Client image 4" />
+                      <span className="star Icon"><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
                   </div>
@@ -57,8 +57,8 @@ export const Reviews = () => {
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">
-                      <img src="images/donos/Foto-minha.jpg" alt="Client image 5" />
-                      <span><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                      <img src="images/donos/Foto-minha.webp" alt="Client image 5" />
+                      <span className="star Icon"><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
                   </div>
