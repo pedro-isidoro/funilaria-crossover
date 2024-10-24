@@ -21,7 +21,7 @@ export const Reviews = () => {
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">
-                      <img src="images/donos/Foto-minha.jpg" alt="" />
+                      <img src="images/donos/Foto-minha.jpg" alt="Client image 1" />
                       <span><IoStarSharp/></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
@@ -30,7 +30,7 @@ export const Reviews = () => {
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">
-                      <img src="images/donos/Foto-minha.jpg" alt="" />
+                      <img src="images/donos/Foto-minha.jpg" alt="Client image 2" />
                       <span><IoStarSharp/><IoStarSharp/></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
@@ -39,7 +39,7 @@ export const Reviews = () => {
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">
-                      <img src="images/donos/Foto-minha.jpg" alt="" />
+                      <img src="images/donos/Foto-minha.jpg" alt="Client image 3" />
                       <span><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
@@ -48,7 +48,7 @@ export const Reviews = () => {
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">
-                      <img src="images/donos/Foto-minha.jpg" alt="" />
+                      <img src="images/donos/Foto-minha.jpg" alt="Client image 4" />
                       <span><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
@@ -57,7 +57,7 @@ export const Reviews = () => {
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">
-                      <img src="images/donos/Foto-minha.jpg" alt="" />
+                      <img src="images/donos/Foto-minha.jpg" alt="Client image 5" />
                       <span><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
