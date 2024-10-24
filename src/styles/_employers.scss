@@ -4,12 +4,12 @@
     padding: 2rem 1rem 6rem 1rem;
     @include displayFlex(row, center, center);
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 3rem;
 
     & .employer_card {
         @include displayFlex(column, center, center);
         gap: 2rem;
-        width: 25rem;
+        width: 30rem;
         height: 40rem;
         background: rgba(247, 220, 210, 0.499);
         border-radius: 1rem;

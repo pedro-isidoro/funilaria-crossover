@@ -1,6 +1,6 @@
 .clientsLogo_section{
     @include displayFlex(column, center, center);
-    gap: 2rem;
+    gap: 6rem;
     width: 100%;
     height: auto;
     padding: 4rem 0;
@@ -13,8 +13,22 @@
         gap: 1rem;
         width: 100%;
         flex-wrap: wrap;
+        @include respond-to(medium) {
+            width: 80%;
+        }
+    
+        @include respond-to(large) {
+            width: 60%;
+        }
         & .clientsLogo_list_item{
-            width: 25%;
+            width: 19%;
+            @include respond-to(medium) {
+                width: 15%;
+            }
+        
+            @include respond-to(large) {
+                width: 12%;
+            }
             & img{
                 border: 0.1rem solid var(--primary-color);
                 width: 100%;

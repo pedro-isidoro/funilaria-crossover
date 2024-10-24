@@ -13,6 +13,13 @@
         padding: 0 3rem;
         text-align: justify;
         font-size: 2rem;
+        @include respond-to(medium) {
+            width: 80%;
+        }
+    
+        @include respond-to(large) {
+            width: 60%;
+        }
     }
 }
 

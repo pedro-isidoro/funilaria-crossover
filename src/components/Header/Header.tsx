@@ -16,8 +16,9 @@ export const Header = () => {
         <nav className="header_navegation">
           <Link to={"/"} className="header_navegation_item">Home</Link>
           <Link to={"/quem-nos-somos"} className="header_navegation_item">Quem Somos</Link>
-          <Link to={"/"} className="header_navegation_item">Reparos</Link>
-          <Link to={"/"} className="header_navegation_item">Estilização</Link>
+          <a href="#services"className="header_navegation_item">Reparos</a>
+          <a href="#services" className="header_navegation_item">Estilização</a>
+          <Link to={"/enderecos"} className="header_navegation_item">Endereços</Link>
         </nav>
         <IoMdMenu className="menuIcon" onClick={()=>SetMenuOpen(true)} />
         {menuOpen ? (
@@ -28,6 +29,7 @@ export const Header = () => {
               <Link to={"/quem-nos-somos"} className="menu_navegation_item">Quem Somos</Link>
               <a href="#services" className="menu_navegation_item">Reparos</a>
               <a href="#services" className="menu_navegation_item">Estilização</a>
+              <Link to={"/enderecos"} className="menu_navegation_item">Endereços</Link>
             </div>
           </nav>
         ) : (

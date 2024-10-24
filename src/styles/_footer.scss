@@ -5,24 +5,30 @@
     padding: 2rem 1rem;
     background: #000;
 
-    @include respond-to(medium) {
-        padding: 1rem 3rem;
-    }
     & .footer_first_section {
         @include displayFlex(row, center, center);
         width: 100%;
+        @include respond-to(medium) {
+            width: 60%;
+            @include displayFlex(row, space-around, center);
+        }
+    
+        @include respond-to(large) {
+            width: 60%;
+        }
         & .Image_section {
             @include displayFlex(row, center, center);
             width: 100%;
+            
             & img{
                 width: 60%;
 
                 @include respond-to(medium) {
-                    width: 40%;
+                    width: 85%;
                 }
         
                 @include respond-to(large) {
-                    width: 35%;
+                    width: 90%;
                 }
             }
         }

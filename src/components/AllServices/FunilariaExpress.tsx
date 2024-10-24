@@ -4,14 +4,14 @@ import { Services } from "./Services"
 
 export const FunilariaExpress = () => {
     return(
-        <section className="funilariaExpress_section">
+        <section className="serviceItem_section">
             <div className="funilaria_background">
                 <h2>Funilaria Express</h2>
             </div>
-            <div className="funilariaExpress_text_section">
+            <div className="serviceItem_text_section">
                 <h4>O que é Funilaria ou Reparos Express?</h4>
                 <p>É uma técnica já conhecida na Europa como “Spot Repair”, isso significa fazer o reparo somente onde ocorreu a avaria na peça.<br/>Seu carro novo de novo, com essa técnica que mantém a originalidade do seu carro e com a solução muito mais rápida.<br/>Peça agora mesmo um orçamento para Reparos Express e se surpreenda com os benefícios.</p>
-                <div className="funilariaExpress_second_text_section">
+                <div className="serviceItem_second_text_section">
                     <h5>Em Quais Situações Utilizo o Reparos Express (micro-pintura) ?</h5>
                     <ul>
                         <li>Pequenas Colisões</li>

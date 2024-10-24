@@ -13,6 +13,7 @@ export const Footer = () => {
           <Link to={"/quem-nos-somos"} className="footer_navegation_item">Quem Somos</Link>
           <a href="#services"  className="footer_navegation_item">Reparos</a>
           <a href="#services"  className="footer_navegation_item">Estilização</a>
+          <Link to={"/enderecos"} className="footer_navegation_item">Endereços</Link>
         </nav>
         <div className="footer_second_section">
           <ul className="nets">

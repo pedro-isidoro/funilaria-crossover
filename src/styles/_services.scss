@@ -6,6 +6,7 @@
 }
 
 .section_services {
+    @include displayFlex(column, center, center);
     width: 100%;
     max-height: 100vh;
     background: #000;
@@ -17,7 +18,13 @@
         flex-wrap: wrap;
         text-align: center;
         gap: 1.5rem;
-
+        @include respond-to(medium) {
+            width: 80%;
+        }
+    
+        @include respond-to(large) {
+            width: 60%;
+        }
         & .services_list_service {
             @include displayFlex(column, space-evenly, center);
             gap: 1rem;
@@ -25,29 +32,51 @@
             height: 13rem;
             border-radius: 1rem;
             background: rgba(255, 255, 255, 0.897);
-
+            @include respond-to(medium) {
+                width: 15rem;
+                height: 15rem;
+            }
+        
+            @include respond-to(large) {
+                width: 17rem;
+                height: 17rem;
+            }
             & p {
                 font-size: 1.4rem;
+                @include respond-to(medium) {
+                    font-size: 1.6rem;
+                }
+            
+                @include respond-to(large) {
+                    font-size: 1.8rem;
+                }
             }
 
             & .link_know_more {
                 font-size: 1.4rem;
                 color: var(--terciary-color);
-
+                @include respond-to(medium) {
+                    font-size: 1.6rem;
+                }
+            
+                @include respond-to(large) {
+                    font-size: 1.8rem;
+                }
                 &:hover {
                     opacity: 0.5;
                 }
             }
         }
 
-        & .carIcon1,
-        .carIcon2,
-        .carIcon3,
-        .carIcon4,
-        .carIcon5,
-        .carIcon6,
-        .carIcon7 {
+        & .carIcon1, .carIcon2, .carIcon3, .carIcon4, .carIcon5, .carIcon6, .carIcon7 {
             font-size: 2.4rem;
+            @include respond-to(medium) {
+                font-size: 2.6rem;
+            }
+        
+            @include respond-to(large) {
+                font-size: 2.8rem;
+            }
         }
     }
 }

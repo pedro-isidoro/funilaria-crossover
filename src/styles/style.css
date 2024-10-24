@@ -164,12 +164,21 @@
   gap: 2rem;
   text-align: center;
   width: 100%;
-  height: 36rem;
-  padding: 1rem;
+  height: 32rem;
   position: relative;
   z-index: 1;
   color: var(--primary-color);
   background-color: rgb(0, 0, 0);
+}
+@media (min-width: 768px) {
+  .section_introducing {
+    height: 48rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section_introducing {
+    height: 62rem;
+  }
 }
 .section_introducing::before {
   content: "";
@@ -178,7 +187,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center/100% url("/images/services/funilaria1.avif");
+  background: no-repeat center/100% url("/images/services/funilaria1.webp");
   opacity: 0.2;
   z-index: -1;
 }
@@ -188,8 +197,22 @@
 .section_introducing h2 {
   font-size: 1.5rem;
   color: var(--terciary-color);
+  position: relative;
+  padding: 1rem;
+}
+.section_introducing h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--secundary-color);
+  z-index: -1;
+  opacity: 0.8;
 }
 .section_introducing p {
+  padding: 0 1rem;
   font-size: 1.6rem;
 }
 
@@ -205,7 +228,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
 }
 .section_employers .employer_card {
   display: flex;
@@ -213,7 +236,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  width: 25rem;
+  width: 30rem;
   height: 40rem;
   background: rgba(247, 220, 210, 0.499);
   border-radius: 1rem;
@@ -261,6 +284,10 @@
 }
 
 .section_services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-height: 100vh;
   background: #000;
@@ -276,6 +303,16 @@
   text-align: center;
   gap: 1.5rem;
 }
+@media (min-width: 768px) {
+  .section_services .services_list {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .section_services .services_list {
+    width: 60%;
+  }
+}
 .section_services .services_list .services_list_service {
   display: flex;
   flex-direction: column;
@@ -287,24 +324,151 @@
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.897);
 }
+@media (min-width: 768px) {
+  .section_services .services_list .services_list_service {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section_services .services_list .services_list_service {
+    width: 17rem;
+    height: 17rem;
+  }
+}
 .section_services .services_list .services_list_service p {
   font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  .section_services .services_list .services_list_service p {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section_services .services_list .services_list_service p {
+    font-size: 1.8rem;
+  }
 }
 .section_services .services_list .services_list_service .link_know_more {
   font-size: 1.4rem;
   color: var(--terciary-color);
 }
+@media (min-width: 768px) {
+  .section_services .services_list .services_list_service .link_know_more {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section_services .services_list .services_list_service .link_know_more {
+    font-size: 1.8rem;
+  }
+}
 .section_services .services_list .services_list_service .link_know_more:hover {
   opacity: 0.5;
 }
-.section_services .services_list .carIcon1,
-.section_services .services_list .carIcon2,
-.section_services .services_list .carIcon3,
-.section_services .services_list .carIcon4,
-.section_services .services_list .carIcon5,
-.section_services .services_list .carIcon6,
-.section_services .services_list .carIcon7 {
+.section_services .services_list .carIcon1, .section_services .services_list .carIcon2, .section_services .services_list .carIcon3, .section_services .services_list .carIcon4, .section_services .services_list .carIcon5, .section_services .services_list .carIcon6, .section_services .services_list .carIcon7 {
   font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .section_services .services_list .carIcon1, .section_services .services_list .carIcon2, .section_services .services_list .carIcon3, .section_services .services_list .carIcon4, .section_services .services_list .carIcon5, .section_services .services_list .carIcon6, .section_services .services_list .carIcon7 {
+    font-size: 2.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section_services .services_list .carIcon1, .section_services .services_list .carIcon2, .section_services .services_list .carIcon3, .section_services .services_list .carIcon4, .section_services .services_list .carIcon5, .section_services .services_list .carIcon6, .section_services .services_list .carIcon7 {
+    font-size: 2.8rem;
+  }
+}
+
+.serviceItem_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  min-height: 100vh;
+  border-bottom: 0.1rem solid var(--primary-color);
+}
+.serviceItem_section h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.serviceItem_text_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: justify;
+  width: 90%;
+}
+.serviceItem_text_section h4 {
+  font-size: 2rem;
+}
+.serviceItem_text_section p {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.serviceItem_second_text_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+.serviceItem_second_text_section h5 {
+  font-size: 1.6rem;
+  background: lightcyan;
+}
+.serviceItem_second_text_section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+  padding-left: 3rem;
+}
+.serviceItem_second_text_section ul li {
+  list-style: circle;
+  font-size: 1.4rem;
+}
+
+.serviceItem_third_text_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+.serviceItem_third_text_section h5 {
+  font-size: 1.6rem;
+  background: lightcyan;
+}
+.serviceItem_third_text_section p {
+  font-size: 1.6rem;
+}
+.serviceItem_third_text_section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+  padding-left: 3rem;
+}
+.serviceItem_third_text_section ul li {
+  list-style: circle;
+  font-size: 1.4rem;
+}
+.serviceItem_third_text_section ul li span {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .section_imageSwiper {
@@ -313,7 +477,19 @@
 }
 .section_imageSwiper .ImageSwiper_list {
   width: 100%;
-  height: 30rem;
+  height: 36rem;
+}
+@media (min-width: 768px) {
+  .section_imageSwiper .ImageSwiper_list {
+    width: 75%;
+    height: 38rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section_imageSwiper .ImageSwiper_list {
+    width: 65%;
+    height: 40rem;
+  }
 }
 .section_imageSwiper .ImageSwiper_list .ImageSwiper_item {
   display: flex;
@@ -321,6 +497,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 .section_imageSwiper .ImageSwiper_list .ImageSwiper_item .ImageSwiper_card {
   display: flex;
@@ -329,7 +506,18 @@
   align-items: center;
   width: 85%;
 }
+@media (min-width: 768px) {
+  .section_imageSwiper .ImageSwiper_list .ImageSwiper_item .ImageSwiper_card {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .section_imageSwiper .ImageSwiper_list .ImageSwiper_item .ImageSwiper_card {
+    width: 60%;
+  }
+}
 .section_imageSwiper .ImageSwiper_list .ImageSwiper_item .ImageSwiper_card img {
+  border-radius: 0.5rem;
   width: 100%;
 }
 
@@ -362,21 +550,6 @@
   transform: translateY(-50%);
 }
 
-.funilariaExpress_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 4rem;
-  width: 100%;
-  min-height: 100vh;
-  border-bottom: 0.1rem solid var(--primary-color);
-}
-.funilariaExpress_section h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
 .funilaria_background {
   display: flex;
   flex-direction: column;
@@ -396,7 +569,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center/100% url("/images/services/clarity-coat-qu9XY-kl1oU-unsplash.jpg");
+  background: no-repeat center/100% url("/images/services/funilaria2.webp");
   opacity: 0.2;
   z-index: -1;
 }
@@ -418,64 +591,6 @@
   opacity: 0.3;
 }
 
-.funilariaExpress_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-align: justify;
-  width: 90%;
-}
-.funilariaExpress_text_section h4 {
-  font-size: 2rem;
-}
-.funilariaExpress_text_section p {
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-
-.funilariaExpress_second_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
-.funilariaExpress_second_text_section h5 {
-  font-size: 1.6rem;
-  background: lightcyan;
-}
-.funilariaExpress_second_text_section ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 0.5rem;
-  padding-left: 3rem;
-}
-.funilariaExpress_second_text_section ul li {
-  list-style: circle;
-  font-size: 1.4rem;
-}
-
-.microPintura_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 4rem;
-  width: 100%;
-  min-height: 100vh;
-  border-bottom: 0.1rem solid var(--primary-color);
-}
-.microPintura_section h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
 .microPintura_background {
   display: flex;
   flex-direction: column;
@@ -495,7 +610,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center/100% url("/images/services/clarity-coat-fYDCMIQ4p_g-unsplash.jpg");
+  background: no-repeat center/100% url("/images/services/funilaria3.webp");
   opacity: 0.2;
   z-index: -1;
 }
@@ -517,89 +632,6 @@
   opacity: 0.3;
 }
 
-.microPintura_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-align: justify;
-  width: 90%;
-}
-.microPintura_text_section h4 {
-  font-size: 2rem;
-}
-.microPintura_text_section p {
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-
-.microPintura_second_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
-.microPintura_second_text_section h5 {
-  font-size: 1.6rem;
-  background: lightcyan;
-}
-.microPintura_second_text_section p {
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-
-.microPintura_third_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
-.microPintura_third_text_section h5 {
-  font-size: 1.6rem;
-  background: lightcyan;
-}
-.microPintura_third_text_section p {
-  font-size: 1.6rem;
-}
-.microPintura_third_text_section ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 0.5rem;
-  padding-left: 3rem;
-}
-.microPintura_third_text_section ul li {
-  list-style: circle;
-  font-size: 1.4rem;
-}
-.microPintura_third_text_section ul li span {
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.paraChoque_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 4rem;
-  width: 100%;
-  min-height: 100vh;
-  border-bottom: 0.1rem solid var(--primary-color);
-}
-.paraChoque_section h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
 .paraChoque_background {
   display: flex;
   flex-direction: column;
@@ -619,7 +651,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center/100% url("/images/services/clarity-coat-qu9XY-kl1oU-unsplash.jpg");
+  background: no-repeat center/100% url("/images/services/funilaria2.webp");
   opacity: 0.2;
   z-index: -1;
 }
@@ -641,45 +673,6 @@
   opacity: 0.3;
 }
 
-.paraChoque_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-align: justify;
-  width: 90%;
-}
-
-.paraChoque_second_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
-.paraChoque_second_text_section p {
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-
-.polimento_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 4rem;
-  width: 100%;
-  min-height: 100vh;
-  border-bottom: 0.1rem solid var(--primary-color);
-}
-.polimento_section h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
 .polimento_background {
   display: flex;
   flex-direction: column;
@@ -699,7 +692,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center/100% url("/images/services/clarity-coat-qu9XY-kl1oU-unsplash.jpg");
+  background: no-repeat center/100% url("/images/services/funilaria2.webp");
   opacity: 0.2;
   z-index: -1;
 }
@@ -721,86 +714,6 @@
   opacity: 0.3;
 }
 
-.polimento_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-align: justify;
-  width: 90%;
-}
-.polimento_text_section h4 {
-  font-size: 2rem;
-}
-.polimento_text_section p {
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-
-.polimento_second_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
-.polimento_second_text_section h5 {
-  font-size: 1.6rem;
-  background: lightcyan;
-}
-.polimento_second_text_section p {
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-.polimento_second_text_section p span {
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.polimento_third_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
-.polimento_third_text_section h5 {
-  font-size: 1.6rem;
-  background: lightcyan;
-}
-.polimento_third_text_section ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 0.5rem;
-  padding-left: 3rem;
-}
-.polimento_third_text_section ul li {
-  list-style: circle;
-  font-size: 1.4rem;
-}
-
-.vitrificacao_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 4rem;
-  width: 100%;
-  min-height: 100vh;
-  border-bottom: 0.1rem solid var(--primary-color);
-}
-.vitrificacao_section h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
 .vitrificacao_background {
   display: flex;
   flex-direction: column;
@@ -820,7 +733,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center/100% url("/images/services/clarity-coat-fYDCMIQ4p_g-unsplash.jpg");
+  background: no-repeat center/100% url("/images/services/funilaria3.webp");
   opacity: 0.2;
   z-index: -1;
 }
@@ -842,49 +755,6 @@
   opacity: 0.3;
 }
 
-.vitrificacao_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-align: justify;
-  width: 90%;
-}
-
-.vitrificacao_second_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
-.vitrificacao_second_text_section h5 {
-  font-size: 1.6rem;
-  background: lightcyan;
-}
-.vitrificacao_second_text_section p {
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-
-.higienizacao_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 4rem;
-  width: 100%;
-  min-height: 100vh;
-  border-bottom: 0.1rem solid var(--primary-color);
-}
-.higienizacao_section h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
 .higienizacao_background {
   display: flex;
   flex-direction: column;
@@ -904,7 +774,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center/100% url("/images/services/clarity-coat-qu9XY-kl1oU-unsplash.jpg");
+  background: no-repeat center/100% url("/images/services/funilaria1.webp");
   opacity: 0.2;
   z-index: -1;
 }
@@ -926,53 +796,6 @@
   opacity: 0.3;
 }
 
-.higienizacao_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-align: justify;
-  width: 90%;
-}
-
-.higienizacao_second_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
-.higienizacao_second_text_section h5 {
-  font-size: 1.6rem;
-  background: lightcyan;
-}
-.higienizacao_second_text_section p {
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-.higienizacao_second_text_section p span {
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.martelinhoDeOuro_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 4rem;
-  width: 100%;
-  min-height: 100vh;
-  border-bottom: 0.1rem solid var(--primary-color);
-}
-.martelinhoDeOuro_section h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
 .martelinhoDeOuro_background {
   display: flex;
   flex-direction: column;
@@ -992,7 +815,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center/100% url("/images/services/funilaria1.avif");
+  background: no-repeat center/100% url("/images/services/funilaria3.webp");
   opacity: 0.2;
   z-index: -1;
 }
@@ -1014,53 +837,6 @@
   opacity: 0.3;
 }
 
-.martelinhoDeOuro_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-align: justify;
-  width: 90%;
-}
-
-.martelinhoDeOuro_second_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
-.martelinhoDeOuro_second_text_section h5 {
-  font-size: 1.6rem;
-  background: lightcyan;
-}
-.martelinhoDeOuro_second_text_section p {
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-.martelinhoDeOuro_second_text_section p span {
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.higienizacaoComOzonio_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 4rem;
-  width: 100%;
-  min-height: 100vh;
-  border-bottom: 0.1rem solid var(--primary-color);
-}
-.higienizacaoComOzonio_section h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
 .higienizacaoComOzonio_background {
   display: flex;
   flex-direction: column;
@@ -1080,7 +856,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center/100% url("/images/services/funilaria1.avif");
+  background: no-repeat center/100% url("/images/services/funilaria1.webp");
   opacity: 0.2;
   z-index: -1;
 }
@@ -1102,30 +878,6 @@
   opacity: 0.3;
 }
 
-.higienizacaoComOzonio_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-align: justify;
-  width: 90%;
-}
-
-.higienizacaoComOzonio_second_text_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
-.higienizacaoComOzonio_second_text_section p {
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-
 .section_reviews {
   width: 100%;
   max-height: 100vh;
@@ -1141,6 +893,16 @@
   flex-wrap: wrap;
   text-align: center;
   gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .section_reviews .reviews_list {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .section_reviews .reviews_list {
+    width: 60%;
+  }
 }
 .section_reviews .reviews_list .reviews_list_review {
   width: 100%;
@@ -1162,18 +924,73 @@
   background: var(--secundary-color);
   color: var(--primary-color);
 }
-.section_reviews .reviews_list .reviews_list_review .review_card img {
+@media (min-width: 768px) {
+  .section_reviews .reviews_list .reviews_list_review .review_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section_reviews .reviews_list .reviews_list_review .review_card {
+    gap: 4rem;
+    padding: 2rem 4rem;
+  }
+}
+.section_reviews .reviews_list .reviews_list_review .review_card .review_card_images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.section_reviews .reviews_list .reviews_list_review .review_card .review_card_images img {
   height: 12rem;
   width: 12rem;
   border-radius: 50%;
 }
-.section_reviews .reviews_list .reviews_list_review .review_card span {
+@media (min-width: 768px) {
+  .section_reviews .reviews_list .reviews_list_review .review_card .review_card_images img {
+    height: 14rem;
+    width: 14rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section_reviews .reviews_list .reviews_list_review .review_card .review_card_images img {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+.section_reviews .reviews_list .reviews_list_review .review_card .review_card_images span {
   font-size: 3rem;
   color: yellow;
+}
+@media (min-width: 768px) {
+  .section_reviews .reviews_list .reviews_list_review .review_card .review_card_images span {
+    font-size: 3.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section_reviews .reviews_list .reviews_list_review .review_card .review_card_images span {
+    font-size: 3.6rem;
+  }
 }
 .section_reviews .reviews_list .reviews_list_review .review_card p {
   text-align: justify;
   font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  .section_reviews .reviews_list .reviews_list_review .review_card p {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section_reviews .reviews_list .reviews_list_review .review_card p {
+    font-size: 1.8rem;
+  }
 }
 
 #rightArrow,
@@ -1206,7 +1023,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 6rem;
   width: 100%;
   height: auto;
   padding: 4rem 0;
@@ -1224,8 +1041,28 @@
   width: 100%;
   flex-wrap: wrap;
 }
+@media (min-width: 768px) {
+  .clientsLogo_section .clientsLogo_list {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .clientsLogo_section .clientsLogo_list {
+    width: 60%;
+  }
+}
 .clientsLogo_section .clientsLogo_list .clientsLogo_list_item {
-  width: 25%;
+  width: 19%;
+}
+@media (min-width: 768px) {
+  .clientsLogo_section .clientsLogo_list .clientsLogo_list_item {
+    width: 15%;
+  }
+}
+@media (min-width: 1024px) {
+  .clientsLogo_section .clientsLogo_list .clientsLogo_list_item {
+    width: 12%;
+  }
 }
 .clientsLogo_section .clientsLogo_list .clientsLogo_list_item img {
   border: 0.1rem solid var(--primary-color);
@@ -1238,7 +1075,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 6rem;
   width: 100%;
   height: auto;
   padding: 4rem 0;
@@ -1253,7 +1090,17 @@
   flex-wrap: wrap;
 }
 .partnersLogo_section .partnersLogo_list .partnersLogo_list_item {
-  width: 25%;
+  width: 19%;
+}
+@media (min-width: 768px) {
+  .partnersLogo_section .partnersLogo_list .partnersLogo_list_item {
+    width: 13%;
+  }
+}
+@media (min-width: 1024px) {
+  .partnersLogo_section .partnersLogo_list .partnersLogo_list_item {
+    width: 8%;
+  }
 }
 .partnersLogo_section .partnersLogo_list .partnersLogo_list_item img {
   width: 100%;
@@ -1281,11 +1128,84 @@
   text-align: justify;
   font-size: 2rem;
 }
+@media (min-width: 768px) {
+  .WhoAreWe_section p {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .WhoAreWe_section p {
+    width: 60%;
+  }
+}
 
 .second_WhoAreWe_section {
   margin-top: 3rem;
 }
 .second_WhoAreWe_section h2 {
+  width: 100%;
+  padding-top: 2rem;
+  background: var(--secundary-color);
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.address_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 4rem;
+  border-bottom: 0.1rem solid var(--primary-color);
+}
+.address_section h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 4rem;
+}
+
+.addresses {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.addresses .first_address, .addresses .second_address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+}
+.addresses .first_address h3, .addresses .second_address h3 {
+  font-size: 2.5rem;
+}
+.addresses .first_address p, .addresses .second_address p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.addresses .first_address .map_iframe, .addresses .second_address .map_iframe {
+  border: 0.1rem solid var(--secundary-color);
+  border-radius: 0.5rem;
+  width: 35rem;
+  height: 25rem;
+}
+
+.address_services_section {
+  margin-top: 3rem;
+}
+.address_services_section h2 {
+  font-size: 2.5rem;
   width: 100%;
   padding-top: 2rem;
   background: var(--secundary-color);
@@ -1303,17 +1223,26 @@
   padding: 2rem 1rem;
   background: #000;
 }
-@media (min-width: 768px) {
-  .footer_section {
-    padding: 1rem 3rem;
-  }
-}
 .footer_section .footer_first_section {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .footer_section .footer_first_section {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .footer_section .footer_first_section {
+    width: 60%;
+  }
 }
 .footer_section .footer_first_section .Image_section {
   display: flex;
@@ -1327,12 +1256,12 @@
 }
 @media (min-width: 768px) {
   .footer_section .footer_first_section .Image_section img {
-    width: 40%;
+    width: 85%;
   }
 }
 @media (min-width: 1024px) {
   .footer_section .footer_first_section .Image_section img {
-    width: 35%;
+    width: 90%;
   }
 }
 .footer_section .footer_first_section .footer_second_section {

@@ -13,6 +13,7 @@ import { Higienizacao } from '@/components/AllServices/Higienizacao';
 import { MartelinhoDeOuro } from '@/components/AllServices/MartelinhoDeOuro';
 import { HigienizacaoComOzonio } from '@/components/AllServices/HigienizacaoComOzonio';
 import { ParaChoque } from '@/components/AllServices/ParaChoque';
+import { Address } from '@/components/Address/Address';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
       { path: "/servicos/martelinho-de-ouro", element: <MartelinhoDeOuro /> },
       { path: "/servicos/higienizacao-com-ozonio", element: <HigienizacaoComOzonio /> },
       { path: "/servicos/para-choque", element: <ParaChoque /> },
+      { path: "/enderecos", element: <Address /> },
     ],
   },
 ]);

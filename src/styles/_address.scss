@@ -1,0 +1,56 @@
+.address_section{
+    @include displayFlex(column, center, center);
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 4rem;
+    border-bottom: 0.1rem solid var(--primary-color);
+    & h2{
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 4rem;
+    }
+}
+
+.addresses{
+    @include displayFlex(row, center, center);
+    flex-wrap: wrap;
+    gap: 4rem;
+    width: 100%;
+    padding-bottom: 2rem;
+    & .first_address, .second_address {
+        @include displayFlex(column, center, center);
+        gap: 1rem;
+        width: auto;
+        height: auto;
+        padding: 1rem;
+        & h3 {
+            font-size: 2.5rem;
+        }
+
+        & p {
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        & .map_iframe {
+            border: 0.1rem solid var(--secundary-color);
+            border-radius: 0.5rem;
+            width: 35rem;
+            height: 25rem;
+        }
+    }
+}
+
+.address_services_section {
+    margin-top: 3rem;
+
+    & h2 {
+        font-size: 2.5rem;
+        width: 100%;
+        padding-top: 2rem;
+        background: var(--secundary-color);
+        text-align: center;
+        color: var(--primary-color);
+    }
+}

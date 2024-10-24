@@ -20,36 +20,46 @@ export const Reviews = () => {
               <SwiperButtonPrev />
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
-                    <img src="images/donos/Foto-minha.jpg" alt="" />
-                    <span><IoStarSharp/></span>
+                    <div className="review_card_images">
+                      <img src="images/donos/Foto-minha.jpg" alt="" />
+                      <span><IoStarSharp/></span>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
-                    <img src="images/donos/Foto-minha.jpg" alt="" />
-                    <span><IoStarSharp/><IoStarSharp/></span>
+                    <div className="review_card_images">
+                      <img src="images/donos/Foto-minha.jpg" alt="" />
+                      <span><IoStarSharp/><IoStarSharp/></span>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="reviews_list_review">
-                    <div className="review_card">
-                    <img src="images/donos/Foto-minha.jpg" alt="" />
-                    <span><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                  <div className="review_card">
+                    <div className="review_card_images">
+                      <img src="images/donos/Foto-minha.jpg" alt="" />
+                      <span><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="reviews_list_review">
-                    <div className="review_card">
-                    <img src="images/donos/Foto-minha.jpg" alt="" />
-                    <span><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                  <div className="review_card">
+                    <div className="review_card_images">
+                      <img src="images/donos/Foto-minha.jpg" alt="" />
+                      <span><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="reviews_list_review">
-                    <div className="review_card">
-                    <img src="images/donos/Foto-minha.jpg" alt="" />
-                    <span><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                  <div className="review_card">
+                    <div className="review_card_images">
+                      <img src="images/donos/Foto-minha.jpg" alt="" />
+                      <span><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
                   </div>
                 </SwiperSlide>

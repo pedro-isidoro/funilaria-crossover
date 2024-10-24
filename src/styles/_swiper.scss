@@ -4,17 +4,33 @@
     position: relative;
     & .ImageSwiper_list {
         width: 100%;
-        height: 30rem;
-
+        height: 36rem;
+        @include respond-to(medium) {
+            width: 75%;
+            height: 38rem;
+        }
+        
+        @include respond-to(large) {
+            width: 65%;
+            height: 40rem;
+        }
         & .ImageSwiper_item {
             @include displayFlex(row, center, center);
             width: 100%;
-
+            height: 100%;
+            
             & .ImageSwiper_card {
                 @include displayFlex(row, center, center);
                 width: 85%;
-
+                @include respond-to(medium) {
+                    width: 70%;
+                }
+                
+                @include respond-to(large) {
+                    width: 60%;
+                }
                 & img {
+                    border-radius: 0.5rem;
                     width: 100%;
                 }
             }
