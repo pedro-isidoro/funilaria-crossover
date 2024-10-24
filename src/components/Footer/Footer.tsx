@@ -1,4 +1,5 @@
 import { FaInstagram, FaWhatsapp, FaRegCopyright  } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -7,6 +8,12 @@ export const Footer = () => {
         <div className="Image_section">
           <img src="/images/logo/logo-crossover.jpeg"/>
         </div>
+        <nav className="footer_navegation">
+          <Link to={"/"} className="footer_navegation_item">Home</Link>
+          <Link to={"/quem-nos-somos"} className="footer_navegation_item">Quem Somos</Link>
+          <Link to={"/"} className="footer_navegation_item">Reparos</Link>
+          <Link to={"/"} className="footer_navegation_item">Estilização</Link>
+        </nav>
         <div className="footer_second_section">
           <ul className="nets">
             <li className="net_item"><a href="" target="_blank"><FaInstagram className="insta"/></a></li>

@@ -15,8 +15,7 @@ export const Header = () => {
         </ul>
         <nav className="header_navegation">
           <Link to={"/"} className="header_navegation_item">Home</Link>
-          <Link to={"/"} className="header_navegation_item">Quem Somos</Link>
-          <Link to={"/"} className="header_navegation_item">Serviços</Link>
+          <Link to={"/quem-nos-somos"} className="header_navegation_item">Quem Somos</Link>
           <Link to={"/"} className="header_navegation_item">Reparos</Link>
           <Link to={"/"} className="header_navegation_item">Estilização</Link>
         </nav>
@@ -26,8 +25,7 @@ export const Header = () => {
             <IoClose className="closeIcon" onClick={()=>SetMenuOpen(false)} />
             <div className="menu_navegation_items">
               <Link to={"/"} className="menu_navegation_item">Home</Link>
-              <Link to={"/"} className="menu_navegation_item">Quem Somos</Link>
-              <Link to={"/"} className="menu_navegation_item">Serviços</Link>
+              <Link to={"/quem-nos-somos"} className="menu_navegation_item">Quem Somos</Link>
               <Link to={"/"} className="menu_navegation_item">Reparos</Link>
               <Link to={"/"} className="menu_navegation_item">Estilização</Link>
             </div>

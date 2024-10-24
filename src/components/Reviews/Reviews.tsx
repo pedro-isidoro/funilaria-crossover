@@ -1,34 +1,59 @@
-import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
+import { GoTriangleRight, GoTriangleLeft  } from "react-icons/go";
+import { IoStarSharp } from "react-icons/io5";
 import { Swiper, SwiperSlide, useSwiper  } from 'swiper/react';
-import { A11y } from 'swiper/modules';
-import '@/styles/pagination.css'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { A11y, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/swiper-bundle.css';
 
 const SwiperButtonNext = () => {
   const swiper = useSwiper();
-  return <FaCircleArrowRight id='rightArrow' onClick={() => swiper.slideNext()} />;
+  return <GoTriangleRight id='rightArrow' onClick={() => swiper.slideNext()} />;
 };
 const SwiperButtonPrev = () => {
   const swiper = useSwiper();
-  return <FaCircleArrowLeft id='leftArrow' onClick={() => swiper.slidePrev()} />
+  return <GoTriangleLeft id='leftArrow' onClick={() => swiper.slidePrev()} />
 };
 export const Reviews = () => {
     return(
         <section className="section_reviews">
           <Swiper
-            modules={[ A11y]} loop slidesPerView={1}className='reviews_list'>
+            modules={[A11y, Navigation, Pagination]} loop slidesPerView={1}className='reviews_list'>
               <SwiperButtonPrev />
-              <SwiperSlide className="reviews_list_review">
-                <img src="images/donos/Foto-minha.jpg" alt="" />
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis reiciendis veniam rem pariatur doloribus. Expedita veritatis soluta eius quod quam laborum perspiciatis voluptates, beatae nulla in debitis doloribus nemo numquam!</p>
-              </SwiperSlide>
-              <SwiperSlide className="reviews_list_review">
-                <img src="images/donos/Foto-minha.jpg" alt="" />
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis reiciendis veniam rem pariatur doloribus. Expedita veritatis soluta eius quod quam laborum perspiciatis voluptates, beatae nulla in debitis doloribus nemo numquam!</p>
-              </SwiperSlide>
-             <SwiperButtonNext />
+                <SwiperSlide className="reviews_list_review">
+                  <div className="review_card">
+                    <img src="images/donos/Foto-minha.jpg" alt="" />
+                    <span><IoStarSharp/></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="reviews_list_review">
+                  <div className="review_card">
+                    <img src="images/donos/Foto-minha.jpg" alt="" />
+                    <span><IoStarSharp/><IoStarSharp/></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="reviews_list_review">
+                    <div className="review_card">
+                    <img src="images/donos/Foto-minha.jpg" alt="" />
+                    <span><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="reviews_list_review">
+                    <div className="review_card">
+                    <img src="images/donos/Foto-minha.jpg" alt="" />
+                    <span><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="reviews_list_review">
+                    <div className="review_card">
+                    <img src="images/donos/Foto-minha.jpg" alt="" />
+                    <span><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/><IoStarSharp/></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, recusandae alias nesciunt ipsa dolor magnam repellendus officia corrupti fugit, odio suscipit aut reprehenderit esse! Culpa nihil sapiente doloribus. Fuga, molestiae?</p>
+                  </div>
+                </SwiperSlide>
+                <SwiperButtonNext />
           </Swiper>
         </section>
     )
