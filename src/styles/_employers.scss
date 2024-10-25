@@ -40,15 +40,21 @@
 
     & .employer_card_nets {
         @include displayFlex(row, center, center);
-
+        gap: 1rem;
         & .employer_card_net_item {
             & a {
-                color: var(--insta-color);
                 font-size: 4rem;
-
+                
                 &:hover {
                     cursor: pointer;
                     color: var(--terciary-color);
+                }
+
+                & .insta{
+                    color: var(--insta-color);
+                }
+                & .whats{
+                    color: var(--whats-color);
                 }
             }
         }

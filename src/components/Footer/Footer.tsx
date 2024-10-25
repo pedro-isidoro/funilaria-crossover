@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="footer_section">
       <section className="footer_first_section">
         <Link to={"/"} className="Image_section">
-          <img src="/images/logo/logo-crossover.jpeg" alt="logo Image"/>
+          <img src="/images/logo/CR.png" alt="logo Image"/>
         </Link>
         <nav className="footer_navegation">
           <Link to={"/"} className="footer_navegation_item">Home</Link>

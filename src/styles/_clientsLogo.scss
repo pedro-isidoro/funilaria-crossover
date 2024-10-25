@@ -21,18 +21,18 @@
             width: 60%;
         }
         & .clientsLogo_list_item{
-            width: 19%;
-            @include respond-to(medium) {
-                width: 15%;
-            }
-        
-            @include respond-to(large) {
-                width: 12%;
-            }
+            @include displayFlex(row, center, center);
+            height: 8rem;
+            width: 11rem;
             & img{
                 border: 0.1rem solid var(--primary-color);
-                width: 100%;
+                width: 9rem;
+                height: 7rem;
                 border-radius: 1rem;
+                @include respond-to(large) {
+                    width: 11rem;
+                    height: 8rem;
+                }
             }
         }
     }

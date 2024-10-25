@@ -25,9 +25,9 @@
                 width: 85%;
                 height: 34rem;
                 padding: 2rem 4rem;
+                background: rgb(248, 224, 224);
+                color: var(--secundary-color);
                 border-radius: 1rem;
-                background: var(--secundary-color);
-                color: var(--primary-color);
                 @include respond-to(medium) {
                     @include displayFlex(row, center, center);
                     gap: 4rem;
@@ -56,7 +56,7 @@
                     }
                     & span{
                         font-size: 3rem;
-                        color: yellow;
+                        color: var(--terciary-color);
                         @include respond-to(medium) {
                             font-size: 3.4rem;
                         }

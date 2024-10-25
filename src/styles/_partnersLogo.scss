@@ -12,18 +12,19 @@
         flex-wrap: wrap;
 
         & .partnersLogo_list_item {
-            width: 19%;
-            @include respond-to(medium) {
-                width: 13%;
-            }
+            @include displayFlex(row, center, center);
+            height: 8rem;
+            width: 11rem;
         
-            @include respond-to(large) {
-                width: 8%;
-            }
             & img {
-                width: 100%;
-                border: 0.1rem solid var(--secundary-color);
+                border: 0.1rem solid var(--primary-color);
+                width: 9rem;
+                height: 7rem;
                 border-radius: 1rem;
+                @include respond-to(large) {
+                    width: 11rem;
+                    height: 8rem;
+                }
             }
         }
     }

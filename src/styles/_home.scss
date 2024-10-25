@@ -13,16 +13,16 @@
     gap: 2rem;
     text-align: center;
     width: 100%;
-    height: 32rem;
+    height: 32.5rem;
     position: relative;
     z-index: 1;
     color: var(--primary-color);
     background-color: rgba(0, 0, 0, 1);
     @include respond-to(medium){
-        height: 48rem;
+        height: 54rem;
     }
     @include respond-to(large){
-        height: 62rem;
+        height: 60rem;
     }
     &::before {
         content: "";
@@ -42,7 +42,7 @@
     
     & h2 {
         font-size: 1.5rem;
-        color: var(--terciary-color);
+        color: var(--primary-color);
         position: relative;
         padding: 1rem;
         &::before{
@@ -52,7 +52,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: var(--secundary-color);
+            background: #af00096e;
             z-index: -1;
             opacity: 0.8;
         }

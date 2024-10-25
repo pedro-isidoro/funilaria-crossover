@@ -54,7 +54,8 @@
 
     & h5 {
         font-size: 1.6rem;
-        background: lightcyan;
+        padding: 0 0.5rem;
+        background: var(--quaternary-color);
         @include respond-to(medium) {
             font-size: 1.9rem;
         }
@@ -131,7 +132,8 @@
 
     & h5 {
         font-size: 1.6rem;
-        background: lightcyan;
+        padding: 0 0.5rem;
+        background: var(--quaternary-color);
     }
 
         & p {
