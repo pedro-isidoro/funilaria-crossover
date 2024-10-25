@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="footer_section">
       <section className="footer_first_section">
         <Link to={"/"} className="Image_section">
-          <img src="/images/logo/CR.png" alt="logo Image"/>
+          <img src="/images/logo/CR.webp" alt="logo Image"/>
         </Link>
         <nav className="footer_navegation">
           <Link to={"/"} className="footer_navegation_item">Home</Link>
@@ -17,8 +17,8 @@ export const Footer = () => {
         </nav>
         <div className="footer_second_section">
           <ul className="nets">
-            <li className="net_item"><a href="" target="_blank" className="instagram Link"><FaInstagram className="insta"/></a></li>
-            <li className="net_item"><a href="" target="_blank" className="whtatsApp Link"><FaWhatsapp className="whats"/></a></li>
+            <li className="net_item"><a href="https://www.instagram.com/crossoverautos/" target="_blank" className="instagram Link"><FaInstagram className="insta"/></a></li>
+            <li className="net_item"><a href="https://api.whatsapp.com/send?phone=5511976316322&text=Olá%20Cross%20Over%20-%20Funilaria%20Express%20%20e%20Estética%20Automotiva%2C%20eu%20preciso%20de%20mais%20informações%20sobre%3A" target="_blank" className="whtatsApp Link"><FaWhatsapp className="whats"/></a></li>
           </ul>
         </div>
       </section>
