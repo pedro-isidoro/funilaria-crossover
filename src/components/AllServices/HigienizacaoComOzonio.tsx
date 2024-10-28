@@ -1,8 +1,10 @@
 import { ImageSwiper } from "@/components/Swiper/Swiper"
 import imageArray from '@/json/funilariaExpress.json'
 import { Services } from "./Services"
+import { GsapServicesFunction } from "@/ts/GsapServicesFunction"
 
 export const HigienizacaoComOzonio = () => {
+    GsapServicesFunction({trigger: ".serviceItem_text_section"})
     return(
         <section className="serviceItem_section">
             <div className="higienizacaoComOzonio_background">

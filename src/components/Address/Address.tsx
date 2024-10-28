@@ -1,6 +1,8 @@
 import { Services } from "@/components/AllServices/Services"
+import { GsapServicesFunction } from "@/ts/GsapServicesFunction"
 
 export const Address = () => {
+    GsapServicesFunction({trigger: ".address_section"})
     return (
         <section className="address_section">
             <h2>Endereços</h2>

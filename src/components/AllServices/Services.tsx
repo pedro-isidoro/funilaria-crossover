@@ -3,8 +3,11 @@ import { FaCar, FaCarCrash, FaAirFreshener } from "react-icons/fa";
 import { FaCarOn } from "react-icons/fa6";
 import { MdCarCrash } from "react-icons/md";
 import { GiPaintRoller, GiVacuumCleaner, GiShieldReflect  } from "react-icons/gi";
+import { GsapFunction } from "@/ts/GsapFunction";
 
 export const Services = () => {
+  
+  GsapFunction({triggerFather: ".services_list", trigger: ".services_list_service", markers: false, start: "top 750px", end: "bottom 500px"});
     return (
         <section id="services" className="section_services">
         <ul className="services_list">

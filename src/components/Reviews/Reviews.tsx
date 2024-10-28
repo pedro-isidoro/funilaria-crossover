@@ -3,6 +3,7 @@ import { IoStarSharp } from "react-icons/io5";
 import { Swiper, SwiperSlide, useSwiper  } from 'swiper/react';
 import { A11y, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
+import { GsapFunction } from "@/ts/GsapFunction";
 
 const SwiperButtonNext = () => {
   const swiper = useSwiper();
@@ -13,6 +14,7 @@ const SwiperButtonPrev = () => {
   return <GoTriangleLeft id='leftArrow' onClick={() => swiper.slidePrev()} />
 };
 export const Reviews = () => {
+    GsapFunction({triggerFather: ".section_reviews", trigger: ".reviews_list", markers: false, start: "top 800px", end: "bottom 700px"}); 
     return(
         <section className="section_reviews">
           <Swiper
