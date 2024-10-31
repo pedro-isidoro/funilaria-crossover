@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaCar, FaCarCrash, FaAirFreshener } from "react-icons/fa";
 import { FaCarOn } from "react-icons/fa6";
 import { MdCarCrash } from "react-icons/md";
-import { GiPaintRoller, GiVacuumCleaner, GiShieldReflect  } from "react-icons/gi";
+import { GiVacuumCleaner, GiShieldReflect } from "react-icons/gi";
 import { GsapFunction } from "@/ts/GsapFunction";
 
 export const Services = () => {
