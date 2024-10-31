@@ -8,7 +8,7 @@ export const Polimento = () => {
     return(
         <section className="serviceItem_section">
             <div className="polimento_background">
-                <h2>Polimento</h2>
+                <h2>Polimento Técnico</h2>
             </div>
             <div className="serviceItem_text_section">
                 <p>O Polimento e Espelhamento Crossover Autos, é um verdadeiro Salão de Beleza para o seu veículo em todo o ABCD, uma forma de manter o seu veículo como novo revitalizando, protegendo e embelezando, essencial para quem é apaixonado por carro.<br/><br/>A 3M desenvolveu um sistema especial de polimento para recuperar o brilho e remover riscos superficiais, manchas, oxidação e outros defeitos da pintura dos automóveis. O tratamento deixa o carro com um brilho perfeito e proteção duradoura (até 06 meses ou 20 lavagens).<br/><br/>Depois que a pintura do automóvel se transformar num verdadeiro espelho, o trabalho se completa com a técnica dos nossos profissionais que com a sua experiência vão deixar seu carro incrível.</p>

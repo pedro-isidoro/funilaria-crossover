@@ -8,7 +8,7 @@ export const MicroPintura = () => {
     return (
         <section className="serviceItem_section">
             <div className="microPintura_background">
-                <h2>Micro Pintura</h2>
+                <h2>Micro Retoque</h2>
             </div>
             <div className="serviceItem_text_section">
                 <p>A micro pintura é uma técnica revolucionária no mundo da restauração automotiva, e a Crossover Autos se destaca nessa área graças à sua expertise e precisão.<br/>Esta técnica inovadora é a solução ideal para reparos rápidos e eficientes, especialmente quando se trata de arranhões ou pequenas avarias no seu veículo.</p>

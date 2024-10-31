@@ -8,7 +8,7 @@ export const ParaChoque = () => {
     return(
         <section className="serviceItem_section">
             <div className="paraChoque_background">
-                <h2>Para Choque</h2>
+                <h2>Recuperação de Parachoque</h2>
             </div>
             <div className="serviceItem_text_section">
                 <div className="serviceItem_second_text_section">

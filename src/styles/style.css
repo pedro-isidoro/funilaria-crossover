@@ -210,9 +210,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center/100% url("/images/services/funilaria1.webp");
-  opacity: 0.2;
+  opacity: 0.3;
+  background-image: url("/images/backdrop/crossoverBackdrop2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: -1;
+}
+@media (min-width: 1024px) {
+  .section_introducing::before {
+    background-size: contain;
+  }
 }
 .section_introducing h5 {
   font-size: 1.2rem;
@@ -259,8 +267,8 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  width: 30rem;
-  height: 40rem;
+  width: 34rem;
+  height: 44rem;
   background: rgba(247, 220, 210, 0.499);
   border-radius: 1rem;
   padding: 1rem;
@@ -407,6 +415,10 @@
   .section_services .services_list .carIcon1, .section_services .services_list .carIcon2, .section_services .services_list .carIcon3, .section_services .services_list .carIcon4, .section_services .services_list .carIcon5, .section_services .services_list .carIcon6, .section_services .services_list .carIcon7 {
     font-size: 2.8rem;
   }
+}
+.section_services .services_list .carIcon2 {
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .serviceItem_section {
@@ -1573,6 +1585,53 @@
 .nets .net_item a .whats:hover {
   cursor: pointer;
   color: var(--terciary-color);
+}
+
+.whatsapp {
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+
+.whatsapp:hover {
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+.whatsapp a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  bottom: 2.8rem;
+  right: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--whats-color);
+  box-shadow: 1px 1px 2px #888;
+  z-index: 10;
+}
+
+.whatsapp a .whatsButton {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.whatsapp p {
+  position: fixed;
+  text-align: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  right: 1.8rem;
+  bottom: 6.4rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  color: var(--primary-color);
+  background-color: var(--terciary-color);
+  z-index: 100;
 }
 
 .main_content {

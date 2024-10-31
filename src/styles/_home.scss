@@ -31,9 +31,15 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: no-repeat center/100% url("/images/services/funilaria1.webp");
-        opacity: 0.2;
+        opacity: 0.3;
+        background-image: url("/images/backdrop/crossoverBackdrop2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         z-index: -1;
+        @include respond-to(large) {
+            background-size: contain;
+        }
     }
 
     & h5 {
