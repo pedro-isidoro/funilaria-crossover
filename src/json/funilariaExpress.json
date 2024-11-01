@@ -8,16 +8,20 @@
         "altImage": "2Image"
     },
     {
-        "source": "/images/services/funilaria3.webp",
+        "source": "/images/services/funilaria2.webp",
         "altImage": "3Image"
     },
     {
-        "source": "/images/services/funilaria1.webp",
+        "source": "/images/services/funilaria2.webp",
         "altImage": "4Image"
     },
     {
-        "source": "/images/services/funilaria2.webp",
+        "source": "/images/services/funilaria3.webp",
         "altImage": "5Image"
+    },
+    {
+        "source": "/images/services/funilaria3.webp",
+        "altImage": "6Image"
     },
     {
         "source": "/images/services/funilaria3.webp",
