@@ -18,7 +18,7 @@
         & img {
             width: 13rem;
             height: 13rem;
-            border-radius: 50%;
+            border-radius: 1rem;
         }
 
         & .employer_card_texts {
@@ -45,16 +45,20 @@
             & a {
                 font-size: 4rem;
                 
-                &:hover {
-                    cursor: pointer;
-                    color: var(--terciary-color);
-                }
-
                 & .insta{
                     color: var(--insta-color);
+                    &:hover {
+                        cursor: pointer;
+                        color: var(--terciary-color);
+                    }
                 }
+                
                 & .whats{
                     color: var(--whats-color);
+                    &:hover {
+                        cursor: pointer;
+                        color: var(--terciary-color);
+                    }
                 }
             }
         }

@@ -276,7 +276,7 @@
 .section_employers .employer_card img {
   width: 13rem;
   height: 13rem;
-  border-radius: 50%;
+  border-radius: 1rem;
 }
 .section_employers .employer_card .employer_card_texts {
   padding: 0 1rem;
@@ -303,15 +303,19 @@
 .section_employers .employer_card_nets .employer_card_net_item a {
   font-size: 4rem;
 }
-.section_employers .employer_card_nets .employer_card_net_item a:hover {
-  cursor: pointer;
-  color: var(--terciary-color);
-}
 .section_employers .employer_card_nets .employer_card_net_item a .insta {
   color: var(--insta-color);
 }
+.section_employers .employer_card_nets .employer_card_net_item a .insta:hover {
+  cursor: pointer;
+  color: var(--terciary-color);
+}
 .section_employers .employer_card_nets .employer_card_net_item a .whats {
   color: var(--whats-color);
+}
+.section_employers .employer_card_nets .employer_card_net_item a .whats:hover {
+  cursor: pointer;
+  color: var(--terciary-color);
 }
 
 .services_title {
@@ -691,13 +695,19 @@
 }
 @media (min-width: 1024px) {
   .ImageSwiper_list.desktop_list {
-    width: 90%;
+    width: 95%;
     height: 38rem;
   }
 }
 .ImageSwiper_list.desktop_list .ImageSwiper_item {
   min-width: 40rem;
   height: 100%;
+}
+@media (min-width: 1024px) {
+  .ImageSwiper_list.desktop_list .ImageSwiper_item {
+    min-width: 48rem;
+    background-color: lightcyan;
+  }
 }
 .ImageSwiper_list.desktop_list .ImageSwiper_item .ImageSwiper_card {
   width: 100%;
@@ -707,7 +717,6 @@
 .ImageSwiper_list.desktop_list .ImageSwiper_item .ImageSwiper_card img {
   border-radius: 0.5rem;
   width: 100%;
-  max-width: 37rem;
   height: 100%;
   -o-object-fit: contai;
      object-fit: contai;

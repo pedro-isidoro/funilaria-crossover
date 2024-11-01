@@ -36,7 +36,7 @@ export const ImageSwiper = ({DataArray}: {DataArray: ImageInfo[]}) => {
                 <SwiperButtonNext />
             </Swiper>
             <Swiper
-            modules={[A11y, Navigation, Pagination]} spaceBetween={5} loop={true} slidesPerView={'auto'} breakpoints={{ 600: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }} centeredSlides={true} className='ImageSwiper_list desktop_list'>
+            modules={[A11y, Navigation, Pagination]} spaceBetween={10} loop={true} slidesPerView={'auto'} breakpoints={{ 600: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }} centeredSlides={true} className='ImageSwiper_list desktop_list'>
                 {/* <SwiperButtonPrev /> */}
                 {DataArray.length > 1 ?(
                     DataArray.map((data, index) => (
