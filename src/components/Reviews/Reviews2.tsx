@@ -1,7 +1,7 @@
 import { IoStarSharp } from "react-icons/io5";
 import { RxAvatar } from "react-icons/rx";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { A11y, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, A11y, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import { GsapFunction } from "@/ts/GsapFunction";
 
@@ -10,7 +10,7 @@ export const Reviews2 = () => {
     return(
         <section className="section_reviews">
           <Swiper
-            modules={[A11y, Navigation, Pagination]} spaceBetween={10} loop={true} slidesPerView={'auto'} breakpoints={{ 600: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }} centeredSlides={true}className='reviews_list desktopReviewsList'>
+            modules={[Autoplay, A11y, Navigation, Pagination]} spaceBetween={10} loop={true} autoplay={{ delay: 3000, disableOnInteraction: false }} slidesPerView={'auto'} breakpoints={{ 600: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }} centeredSlides={true}className='reviews_list desktopReviewsList'>
                 <SwiperSlide className="reviews_list_review">
                   <div className="review_card">
                     <div className="review_card_images">

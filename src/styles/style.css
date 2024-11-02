@@ -696,7 +696,7 @@
 }
 @media (min-width: 1024px) {
   .ImageSwiper_list.desktop_list {
-    width: 95%;
+    width: 90%;
     height: 38rem;
   }
 }

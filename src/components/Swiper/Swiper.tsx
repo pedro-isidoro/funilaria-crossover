@@ -1,6 +1,6 @@
 import { GoTriangleRight, GoTriangleLeft  } from "react-icons/go";
 import { Swiper, SwiperSlide, useSwiper  } from 'swiper/react';
-import { A11y, Navigation, Pagination } from 'swiper/modules';
+import { A11y, Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 const SwiperButtonNext = () => {
@@ -36,7 +36,7 @@ export const ImageSwiper = ({DataArray}: {DataArray: ImageInfo[]}) => {
                 <SwiperButtonNext />
             </Swiper>
             <Swiper
-            modules={[A11y, Navigation, Pagination]} spaceBetween={10} loop={true} slidesPerView={'auto'} breakpoints={{ 600: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }} centeredSlides={true} className='ImageSwiper_list desktop_list'>
+            modules={[Autoplay, A11y, Navigation, Pagination]} spaceBetween={10} loop={true} slidesPerView={'auto'} autoplay={{ delay: 2500, disableOnInteraction: false }} breakpoints={{ 600: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }} centeredSlides={true} className='ImageSwiper_list desktop_list'>
                 {/* <SwiperButtonPrev /> */}
                 {DataArray.length > 1 ?(
                     DataArray.map((data, index) => (
