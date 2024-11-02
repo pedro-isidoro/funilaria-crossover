@@ -10,10 +10,7 @@
         text-align: center;
         width: 100%;
         @include respond-to(medium) {
-            width: 70%;
-        }
-        @include respond-to(large) {
-            width: 60%;
+            display: none;
         }
         & .reviews_list_review {
             @include displayFlex(row, center, center);
@@ -27,15 +24,6 @@
                 background: rgba(218, 210, 210, 0.753);
                 color: var(--secundary-color);
                 border-radius: 1rem;
-                @include respond-to(medium) {
-                    height: 36rem;
-                    width: 90%;
-                    gap: 2rem;
-                    padding: 2rem;
-                }
-                @include respond-to(large) {
-                    padding: 2rem 4rem;
-                }
                 & .review_card_images{
                     @include displayFlex(column, center, center);
                     gap: 2rem;
@@ -47,25 +35,115 @@
                     & span{
                         font-size: 3rem;
                         color: var(--terciary-color);
-                        @include respond-to(medium) {
-                            font-size: 3.4rem;
-                        }
-                    
-                        @include respond-to(large) {
-                            font-size: 3.6rem;
-                        }
                     }
                 }
                 & p {
                     text-align: justify;
                     font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+.desktopReviewsList.reviews_list {
+    @include displayFlex(row, center, center);
+    display: none;
+    text-align: center;
+    width: 100%;
+
+    @include respond-to(medium) {
+        width: 90%;
+        display: flex;
+    }
+
+    & .reviews_list_review {
+        @include displayFlex(row, center, center);
+        width: 100%;
+
+        & .review_card {
+            // @include displayFlex(column, space-evenly, center);
+            // gap: 0.5rem;
+            display: grid;
+            grid: "avatarLogo" "avaliation" "paragraph";
+            place-items: center;
+            width: 85%;
+            height: 38rem;
+            padding: 1rem 4rem;
+            background: rgba(218, 210, 210, 0.753);
+            color: var(--secundary-color);
+            border-radius: 1rem;
+
+            @include respond-to(medium) {
+                height: 34rem;
+                width: 90%;
+                gap: 2rem;
+                padding: 2rem;
+            }
+
+            @include respond-to(large) {
+                padding: 2rem 4rem;
+            }
+
+            & .review_card_images {
+                @include displayFlex(column, center, center);
+
+                & .avatar {
+                    height: 10rem;
+                    width: 10rem;
+                    border-radius: 50%;
+                    grid-area: "avatarLogo";
+                }
+
+                & span {
+                    grid-area: "avaliation";
+                    font-size: 3rem;
+                    color: var(--terciary-color);
+
                     @include respond-to(medium) {
-                        font-size: 1.6rem;
+                        font-size: 3.4rem;
                     }
-                
+
                     @include respond-to(large) {
-                        font-size: 1.8rem;
+                        font-size: 3.6rem;
                     }
+                }
+            }
+
+            & p {
+                grid-area: "paragraph";
+                text-align: justify;
+                font-size: 1.4rem;
+                max-height: 12rem;
+                overflow-y: auto;
+                padding-right: 1rem;
+                /* Estilização do scrollbar */
+                &::-webkit-scrollbar {
+                    width: 6px;
+                }
+            
+                &::-webkit-scrollbar-track {
+                    background: #f0f0f0;
+                    border-radius: 10px;
+                }
+            
+                &::-webkit-scrollbar-thumb {
+                    background: var(--terciary-color);
+                    /* Cor da barra de rolagem */
+                    border-radius: 10px;
+                }
+            
+                &::-webkit-scrollbar-thumb:hover {
+                    background: darkorange;
+                }
+
+                @include respond-to(medium) {
+                    font-size: 1.6rem;
+                }
+
+                @include respond-to(large) {
+                    font-size: 1.7rem;
+                    width: 90%;
                 }
             }
         }

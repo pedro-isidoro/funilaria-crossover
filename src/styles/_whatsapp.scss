@@ -1,6 +1,5 @@
 .whatsapp {
     position: relative;
-    transition: 0.2s ease-in-out;
 }
 
 .whatsapp:hover {
@@ -23,6 +22,7 @@
     background-color: var(--whats-color);
     box-shadow: 1px 1px 2px #888;
     z-index: 10;
+    animation: float ease-in-out infinite 2s;
 }
 
 .whatsapp a .whatsButton{
@@ -44,4 +44,17 @@
     color: var(--primary-color);
     background-color: var(--terciary-color);
     z-index: 100;
+    animation: float ease-in-out infinite 2s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(2px);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
 }

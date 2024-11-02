@@ -7,7 +7,7 @@ export const Header = () => {
   const [menuOpen, SetMenuOpen] = useState(false)
   return (
     <header className="header_section">
-      <Link className="linkImage" to={"/"}><img src="/images/logo/CR.webp" alt="logo Image"/></Link>
+      <Link className="linkImage" to={"/"}><img src="/images/logo/CR.webp" alt="logo Image" aria-label="Link to Home Page"/></Link>
       <section className="header_second_section">
         <ul className="header_infos">
           <li className="header_infos_item"><p>Fone 1: <span>(11) 4330-0672</span></p></li>
@@ -16,8 +16,8 @@ export const Header = () => {
         <nav className="header_navegation">
           <Link to={"/"} className="header_navegation_item">Home</Link>
           <Link to={"/quem-nos-somos"} className="header_navegation_item">Quem Somos</Link>
-          <a href="#services"className="header_navegation_item">Reparos</a>
-          <a href="#services" className="header_navegation_item">Estilização</a>
+          <a href="#services"className="header_navegation_item" aria-label="Link to Services Section">Reparos</a>
+          <a href="#services" className="header_navegation_item" aria-label="Link to Services Section">Estilização</a>
           <Link to={"/enderecos"} className="header_navegation_item">Endereços</Link>
         </nav>
         <IoMdMenu className="menuIcon" onClick={()=>SetMenuOpen(true)} />
@@ -27,8 +27,8 @@ export const Header = () => {
             <div className="menu_navegation_items">
               <Link to={"/"} className="menu_navegation_item">Home</Link>
               <Link to={"/quem-nos-somos"} className="menu_navegation_item">Quem Somos</Link>
-              <a href="#services" className="menu_navegation_item">Reparos</a>
-              <a href="#services" className="menu_navegation_item">Estilização</a>
+              <a href="#services" className="menu_navegation_item" aria-label="Link to Services Section">Reparos</a>
+              <a href="#services" className="menu_navegation_item" aria-label="Link to Services Section">Estilização</a>
               <Link to={"/enderecos"} className="menu_navegation_item">Endereços</Link>
             </div>
           </nav>

@@ -1,5 +1,6 @@
 import { Employers } from "@/components/Employers/Employers";
 import { Reviews } from "@/components/Reviews/Reviews";
+import { Reviews2 } from "@/components/Reviews/Reviews2";
 import { Services } from "@/components/AllServices/Services";
 import { ClietsLogo } from "@/components/ClietsLogo/ClietsLogo";
 import clientsData from "@/json/ClientsLogo.json"
@@ -21,6 +22,7 @@ export const Home = () => {
       <Services />
         <h2 className="reviews_title">Comentários</h2>
       <Reviews />
+      <Reviews2 />
       <ClietsLogo items={clientsData} />
       <PartnersLogo items={partnersData} />
     </section>
