@@ -12,8 +12,8 @@ export const Higienizacao = () => {
             </div>
             <div className="serviceItem_text_section">
                 <div className="serviceItem_second_text_section">
-                    <h5>Higienização interna do automóvel</h5>
-                    <p>Mais do que um luxo, é essencial para o bem-estar e saúde dos ocupantes.​<br/>O carro é um ambiente onde muitas pessoas passam grande parte do seu dia, por isso é comum acumular sujeiras, manchas, pó e mau cheiro em seu interior.<br/>Por isso, a higienização interna deve ser feita, no máximo, a cada seis meses por uma empresa especializada que utilizam produtos e equipamentos homologados pela <span>Agência Nacional de Vigilância Sanitária</span> (Anvisa).</p>
+                    <h5>Higienização técnica ou higienização convencional?</h5>
+                    <p>Higienização técnica: é usado maquinários como extratoras, escovas macias rotativas, produtos alto ph desenvolvido por técnicos especializados para proporcionar limpeza nos tecidos couros e plástico de auto nível sem manchar tecido ou plásticos e painel, e sem ressecamento nos tecidos.<br/>O que é mais importante de tudo isso!! A rapidez e alta qualidade para atender aos clientes que cada vez mais São exigente por tempo, e qualidade.</p>
                 </div>
             </div>
             <h2>Galeria de Imagens</h2>

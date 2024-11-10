@@ -1,0 +1,22 @@
+[
+    {
+        "source": "/images/team/employers.webp",
+        "altImage": "Employers Image"
+    },
+    {
+        "source": "/images/team/zeca.webp",
+        "altImage": "Zeca Image"
+    },
+    {
+        "source": "/images/team/odilon.webp",
+        "altImage": "Odilon Image"
+    },
+    {
+        "source": "/images/team/team1.webp",
+        "altImage": "First Team Image"
+    },
+    {
+        "source": "/images/team/team2.webp",
+        "altImage": "Second Team Image"
+    }
+]

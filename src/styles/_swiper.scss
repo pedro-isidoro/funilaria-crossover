@@ -4,7 +4,7 @@
     position: relative;
 
     & .ImageSwiper_list {
-        height: 36rem;
+        height: 38rem;
         width: 100%;
 
         @include respond-to(medium) {
@@ -24,47 +24,37 @@
                 & img {
                     border-radius: 0.5rem;
                     width: 37rem;
-                    height: 32rem;
+                    height: 37rem;
                 }
             }
         }
     }
 }
 
-.ImageSwiper_list.desktop_list{
-    display: none;
-    width: 100%;
-    @include respond-to(medium) {
-        display: flex;
-    }
-    
-    @include respond-to(medium) {
+// Itens no modo desktop
+& .ImageSwiper_item.desktop_item {
+    @include displayFlex(row, center, center);
+    width: auto; // ajuste automático para evitar sobreposição
+    height: 100%;
+    margin: 0 0.5rem; // adiciona espaçamento entre os itens
+    & .ImageSwiper_card.desktop_card {
+        @include displayFlex(row, center, center);
+        width: 100%;
+        min-width: 35rem;
+        max-width: 40rem; // limita a largura máxima dos cartões
         height: 30rem;
-    }
-    
-    @include respond-to(large) {
-        width: 90%;
-        height: 38rem;
-    }
-
-    & .ImageSwiper_item {
-        min-width: 40rem;
-        height: 100%;
-        @include respond-to(large) {
-            min-width: 48rem;
-            background-color: lightcyan;
+        @include respond-to(large){
+            max-width: 45rem;
         }
-        & .ImageSwiper_card {
+
+        & img {
+            border-radius: 0.5rem;
             width: 100%;
             height: 100%;
-            overflow: hidden;
-
-            & img {
-                border-radius: 0.5rem;
-                width: 100%;
-                height: 100%;
-                object-fit: contai;
-                object-position: center;
+            min-width: 35rem;
+            max-width: 40rem; // mantém o tamanho da imagem consistente
+            @include respond-to(large) {
+                max-width: 45rem;
             }
         }
     }

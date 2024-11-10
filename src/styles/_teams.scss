@@ -1,0 +1,5 @@
+.teamImages_section{
+    @include displayFlex(column, center, center);
+    width: 100%;
+    padding: 4rem 1rem 6rem 1rem;
+}

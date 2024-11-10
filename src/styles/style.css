@@ -650,7 +650,7 @@
   position: relative;
 }
 .section_imageSwiper .ImageSwiper_list {
-  height: 36rem;
+  height: 38rem;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -677,52 +677,41 @@
 .section_imageSwiper .ImageSwiper_list .ImageSwiper_item .ImageSwiper_card img {
   border-radius: 0.5rem;
   width: 37rem;
-  height: 32rem;
+  height: 37rem;
 }
 
 .ImageSwiper_list.desktop_list {
   display: none;
-  width: 100%;
+  width: 70rem;
 }
 @media (min-width: 768px) {
   .ImageSwiper_list.desktop_list {
     display: flex;
   }
 }
-@media (min-width: 768px) {
-  .ImageSwiper_list.desktop_list {
-    height: 30rem;
-  }
-}
 @media (min-width: 1024px) {
   .ImageSwiper_list.desktop_list {
-    width: 90%;
-    height: 38rem;
+    height: 40rem;
+    width: 95rem;
   }
 }
-.ImageSwiper_list.desktop_list .ImageSwiper_item {
-  min-width: 40rem;
+.ImageSwiper_list.desktop_list .ImageSwiper_item.desktop_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
   height: 100%;
 }
-@media (min-width: 1024px) {
-  .ImageSwiper_list.desktop_list .ImageSwiper_item {
-    min-width: 48rem;
-    background-color: lightcyan;
-  }
+.ImageSwiper_list.desktop_list .ImageSwiper_item.desktop_item .ImageSwiper_card.desktop_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.ImageSwiper_list.desktop_list .ImageSwiper_item .ImageSwiper_card {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.ImageSwiper_list.desktop_list .ImageSwiper_item .ImageSwiper_card img {
+.ImageSwiper_list.desktop_list .ImageSwiper_item.desktop_item .ImageSwiper_card.desktop_card img {
   border-radius: 0.5rem;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contai;
-     object-fit: contai;
-  -o-object-position: center;
-     object-position: center;
+  width: 30rem;
 }
 
 #swiperRightArrow,
@@ -1449,6 +1438,15 @@
     width: 11rem;
     height: 8rem;
   }
+}
+
+.teamImages_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4rem 1rem 6rem 1rem;
 }
 
 .WhoAreWe_section {

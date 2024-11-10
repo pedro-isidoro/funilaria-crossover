@@ -6,6 +6,7 @@ import { ClietsLogo } from "@/components/ClietsLogo/ClietsLogo";
 import clientsData from "@/json/ClientsLogo.json"
 import { PartnersLogo } from "@/components/PartnersLogo/PartnersLogo";
 import partnersData from "@/json/partnersLogo.json"
+import { TeamFunilariaExpress } from "../Team/Team";
 
 export const Home = () => {
 
@@ -25,6 +26,7 @@ export const Home = () => {
       <Reviews2 />
       <ClietsLogo items={clientsData} />
       <PartnersLogo items={partnersData} />
+      <TeamFunilariaExpress />
     </section>
   )
 }

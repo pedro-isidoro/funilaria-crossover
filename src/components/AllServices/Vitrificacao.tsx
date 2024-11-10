@@ -12,8 +12,14 @@ export const Vitrificacao = () => {
             </div>
             <div className="serviceItem_text_section">
                 <div className="serviceItem_second_text_section">
-                    <h5>A Vitrificação da Pintura do seu carro na Crossover Autos garante maior resistência e beleza!</h5>
-                    <p>A vitrificação automotiva é um tratamento que cria um super protetor para a pintura com o uso de sua matéria prima que é o “polissilazano” que forma uma película chamada “sílica vítrea” que protege essa pintura contra os efeitos nocivos dos raios UV.<br/>Isso evita principalmente, o desbotamento da pintura, e impede que as sujeiras penetrem na pintura do veículo, dificultando assim que qualquer sujeira possa grudar nessa superfície. O produto ainda possui uma função auto limpante, formando uma película mais dura e resistente que impede também a deterioração do brilho da pintura.</p>
+                    <h5>Grafeno</h5>
+                    <p>O grafeno, material quimicamente não reativo e inerte, é processado de forma específica para permitir uma combinação de materiais que o habilitem como revestimento de longa duração.<br/>O óxido de grafeno reduzido (rGO) é obtido após a oxidação química do grafeno e ligação com moléculas de oxigênio. Moléculas inorgânicas formadas por nanopartículas de silício e titânio são anexadas, resultando em um uso menor de solventes e baixo nível de compostos orgânicos voláteis.</p>
+                </div>
+            </div>
+            <div className="serviceItem_text_section">
+                <div className="serviceItem_second_text_section">
+                    <h5>Revestimento - Cerâmico vs Grafeno</h5>
+                    <p>O grafeno, material quimicamente não reativo e inerte, é processado de forma específica para permitir uma combinação de materiais que o habilitem como revestimento de longa duração.<br/>O grafeno, sendo carbono, é uma matéria orgânica que, ao ser combinada com materiais inorgânicos, forma um revestimento híbrido de alta performance, diferenciando-se dos revestimentos cerâmicos que são baseados em nanopartículas de dióxido de silício e/ou titânio.<br/>Também tendo um durabilidade de até 3 anos sobre a pintura do veículo.<br/>Perfeito para quem cuida e quer sempre Ver o carro Brilhando e Protegido.</p>
                 </div>
             </div>
             <h2>Galeria de Imagens</h2>

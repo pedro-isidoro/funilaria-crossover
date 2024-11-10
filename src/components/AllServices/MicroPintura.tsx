@@ -1,5 +1,5 @@
 import { ImageSwiper } from "@/components/Swiper/Swiper"
-import imageArray from '@/json/funilariaExpress.json'
+import imageArray from '@/json/microRetoque.json'
 import { Services } from "./Services"
 import { GsapServicesFunction } from "@/ts/GsapServicesFunction"
 
@@ -11,31 +11,23 @@ export const MicroPintura = () => {
                 <h2>Micro Retoque</h2>
             </div>
             <div className="serviceItem_text_section">
-                <p>A micro pintura é uma técnica revolucionária no mundo da restauração automotiva, e a Crossover Autos se destaca nessa área graças à sua expertise e precisão.<br/>Esta técnica inovadora é a solução ideal para reparos rápidos e eficientes, especialmente quando se trata de arranhões ou pequenas avarias no seu veículo.</p>
                 <div className="serviceItem_second_text_section">
-                    <h5>Tecnologia de Ponta para um Resultado Preciso</h5>
-                    <p>O segredo da micro pintura está na sua precisão.<br/>Diferente dos métodos tradicionais, que muitas vezes exigem a repintura de uma área extensa do veículo, a micro pintura foca exclusivamente no local afetado.<br/>Isso não só economiza tempo e recursos, mas também mantém a integridade e a originalidade da peça do carro.</p>
-                </div>
-                <div className="serviceItem_second_text_section">
-                    <h5>Economia e Manutenção da Originalidade</h5>
-                    <p>O ponto alto desta técnica é o fato dela corrigir apenas o local afetado, excluindo a necessidade de pintar toda a peça do veículo – atividade que encareceria o serviço e retiraria da parte modificada seu aspecto de originalidade. E a Crossover Autos faz isso com muita qualidade graças à experiência dos seus profissionais.</p>
-                </div>
-                <div className="serviceItem_second_text_section">
-                    <h5>Profissionais Experientes para um Serviço de Excelência</h5>
-                    <p>Na Crossover Autos, contamos com uma equipe de especialistas altamente qualificados no campo da micro pintura.<br/>Eles possuem uma vasta experiência e são treinados para identificar a cor exata e o tipo de acabamento necessário para cada reparo, garantindo um resultado indistinguível do original.</p>
+                    <h5>Micro pintura, micro retoque ou micro riscos?</h5>
                 </div>
                 <div className="serviceItem_third_text_section">
-                    <h5>Benefícios da Micro Pintura</h5>
-                    <p>A micro pintura é ideal para pequenos reparos, como arranhões ou lascas na pintura. Ela oferece diversos benefícios:</p>
+                    <h5>Micro pintura e micro retoque é a mesma técnica ou processo usado.</h5>
+                    <p>Nesse caso é feito 5 etapas de processo.</p>
                     <ul>
-                        <li><span>Rapidez no Serviço: </span>Reparos feitos em tempo reduzido, sem a necessidade de deixar o carro na oficina por dias.</li>
-                        <li><span>Custo-benefício: </span>É uma opção mais econômica, pois evita a repintura de grandes áreas.</li>
-                        <li><span>Preservação da Originalidade: </span>Mantém a autenticidade e o valor do seu veículo, sem alterações drásticas na pintura original.</li>
+                        <li>Lixamento localizado para corrigir o risco com lixa de baixo abrasivo.</li>
+                        <li>Aplicação localizado de primer para enchimento e nivelamento da superfície.</li>
+                        <li>Aplicação da tinta com pistola própria para pequeno reparos em um espaço de 10 cm. Aproximadamente.</li>
+                        <li>Aplicação do verniz de alta qualidade (secagem outra rápido). Que permite entregar seu carro no MESMO DIA.</li>
+                        <li>Mata retoque para aderência (Fuzão) entre o verniz aplicado e o já existente dando um perfeito acabamento sem deixar marcar ou emenda entre as partes.<br/>Deixando o acabamento 100%.</li>
                     </ul>
                 </div>
                 <div className="serviceItem_second_text_section">
-                    <h5>Compromisso com a Qualidade</h5>
-                    <p>Na Crossover Autos, nosso compromisso é entregar um serviço que não apenas atende, mas supera as expectativas dos nossos clientes.<br/>Com a micro pintura, oferecemos uma solução rápida, eficaz e de alta qualidade, assegurando que seu carro saia de nossa oficina em condições impecáveis.</p>
+                    <h5>Micro Riscos</h5>
+                    <p>Esse processo é feito com caneta aerógrafo.<br/>É preciso das peças onde está o risco a ser reparado estar polido e livre de impurezas.<br/>Com a caneta se faz o enchimento localizado várias vezes até igualar a superfície.<br/>Após esse processo se faz o polimento novamente.<br/>A qualidade fica por volta de 60% percebe-se uma linha do risco bem fininha, ou seja não fica perfeito.<br/>Geralmente quem opta por esse reparos são os lojista que tem baixo custo e acaba maquiando a pintura.<br/>Esse processo não é recomendado para quem é "chato" com carro.</p>
                 </div>
                 <div className="serviceItem_second_text_section">
                     <h5>Conclusão</h5>
