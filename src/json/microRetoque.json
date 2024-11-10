@@ -4,15 +4,19 @@
         "altImage": "First Image"
     },
     {
-        "source": "/images/services/microRetoque/Pintura-roda-black-piano.webp",
-        "altImage": "Second Image"
+        "source": "/images/services/microRetoque/Micro-retoque-pára-choque-.webp",
+        "altImage":"Second Image"
     },
     {
-        "source": "/images/services/microRetoque/BMW-Pintura-pronta-pára-choque-.webp",
+        "source": "/images/services/microRetoque/Pintura-roda-black-piano.webp",
         "altImage": "Third Image"
     },
     {
-        "source": "/images/services/microRetoque/BMW-Pintura-pronta-pára-choque-_1_.webp",
+        "source": "/images/services/microRetoque/BMW-Pintura-pronta-pára-choque-.webp",
         "altImage": "Fourth Image"
+    },
+    {
+        "source": "/images/services/microRetoque/BMW-Pintura-pronta-pára-choque-_1_.webp",
+        "altImage": "Fifith Image"
     }
 ]
