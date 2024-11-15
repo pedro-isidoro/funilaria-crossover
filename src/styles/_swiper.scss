@@ -1,91 +1,68 @@
-//Carrossel
+// Carrossel
 .section_imageSwiper {
+    @include displayFlex(row, center, center);
     width: 100%;
     position: relative;
 
     & .ImageSwiper_list {
-        height: 38rem;
+        @include displayFlex(row, center, center);
         width: 100%;
-
-        @include respond-to(medium) {
-            display: none;
+        height: auto; // Altura do Swiper ajustável se necessário
+        // Itens no modo desktop
+        @include respond-to(large) {
+            max-width: 1200px;
+            margin: auto; // Centralizar no container principal
+            height: auto;
         }
-
         & .ImageSwiper_item {
             @include displayFlex(row, center, center);
-            width: 100%;
-            height: 100%;
+            width: auto;
+            height: auto; // Mantém a altura automática para o Swiper
 
             & .ImageSwiper_card {
                 @include displayFlex(row, center, center);
-                width: 100%;
-                height: auto;
+                width: 35rem; // Largura fixa para o card
+                height: 40rem; // Altura fixa para o card
+                background-color: #f5f5f5; // Fundo de cor neutra para contraste
+                overflow: hidden; // Garantir que imagens maiores sejam cortadas
 
                 & img {
                     border-radius: 0.5rem;
-                    width: 37rem;
-                    height: 37rem;
+                    width: 100%; // Adapta a largura ao card
+                    height: 100%; // Adapta a altura ao card
+                    object-fit: cover; // Garante que a imagem seja proporcional dentro do espaço
                 }
             }
         }
     }
 }
 
-// Itens no modo desktop
-& .ImageSwiper_item.desktop_item {
-    @include displayFlex(row, center, center);
-    width: auto; // ajuste automático para evitar sobreposição
-    height: 100%;
-    margin: 0 0.5rem; // adiciona espaçamento entre os itens
-    & .ImageSwiper_card.desktop_card {
-        @include displayFlex(row, center, center);
-        width: 100%;
-        min-width: 35rem;
-        max-width: 40rem; // limita a largura máxima dos cartões
-        height: 30rem;
-        @include respond-to(large){
-            max-width: 45rem;
-        }
-
-        & img {
-            border-radius: 0.5rem;
-            width: 100%;
-            height: 100%;
-            min-width: 35rem;
-            max-width: 40rem; // mantém o tamanho da imagem consistente
-            @include respond-to(large) {
-                max-width: 45rem;
-            }
-        }
-    }
-}
-
 //Arrows
-#swiperRightArrow,
-#swiperLeftArrow {
-    color: var(--terciary-color);
-    position: absolute;
-    width: 4rem;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
+// #swiperRightArrow,
+// #swiperLeftArrow {
+//     color: var(--terciary-color);
+//     position: absolute;
+//     width: 4rem;
+//     height: 4rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     z-index: 10;
 
-    &:hover {
-        cursor: pointer;
-        opacity: 0.8;
-    }
-}
+//     &:hover {
+//         cursor: pointer;
+//         opacity: 0.8;
+//     }
+// }
 
-#swiperRightArrow {
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+// #swiperRightArrow {
+//     right: 0;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
 
-#swiperLeftArrow {
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+// #swiperLeftArrow {
+//     left: 0;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
