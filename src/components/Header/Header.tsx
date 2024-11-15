@@ -11,7 +11,7 @@ export const Header = () => {
       <section className="header_second_section">
         <ul className="header_infos">
           <li className="header_infos_item"><p>Fone 1: <span>(11) 4330-0672</span></p></li>
-          <li className="header_infos_item"><p>Fone 2: <span>(11) 2356-4622</span></p></li>
+          <li className="header_infos_item"><p>Fone 2: <span>(11) 2356-4616</span></p></li>
         </ul>
         <nav className="header_navegation">
           <Link to={"/"} className="header_navegation_item">Home</Link>
