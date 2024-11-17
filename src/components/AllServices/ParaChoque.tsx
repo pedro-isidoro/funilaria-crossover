@@ -2,6 +2,8 @@ import { ImageSwiper } from "@/components/Swiper/Swiper"
 import imageArray from '@/json/ParaChoque.json'
 import { Services } from "./Services"
 import { GsapServicesFunction } from "@/ts/GsapServicesFunction"
+import { VideoSwiper } from "@/components/Swiper/VideoSwiper"
+import videoArray from '@/json/videos/paraChoque.json'
 
 export const ParaChoque = () => {
     GsapServicesFunction({trigger: ".serviceItem_text_section"})
@@ -17,6 +19,8 @@ export const ParaChoque = () => {
             </div>
             <h2>Galeria de Imagens</h2>
             <ImageSwiper DataArray={imageArray} />
+            <h2>Galeria de Vídeos</h2>
+            <VideoSwiper DataArray={videoArray} />
             <Services />
         </section>
     )

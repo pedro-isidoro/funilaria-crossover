@@ -1,18 +1,30 @@
 [
     {
-        "source": "/images/services/ParaChoque/Audi Recuperação pára-choque Aidi A4.webp",
+        "source": "/images/services/ParaChoque/Pára-choque-recuperado-.webp",
         "altImage": "First Image"
     },
     {
-        "source": "/images/services/ParaChoque/Audi Recuperação pára-choque Audi A4 finalizado .webp",
+        "source": "/images/services/ParaChoque/Audi Recuperação pára-choque Aidi A4.webp",
         "altImage":"Second Image"
     },
     {
-        "source": "/images/services/ParaChoque/Kikcs antes recuperação pára-choque .webp",
+        "source": "/images/services/ParaChoque/Audi Recuperação pára-choque Audi A4 finalizado .webp",
         "altImage": "Third Image"
     },
     {
-        "source": "/images/services/ParaChoque/Kikcs depois recuperação pára-choque .webp",
+        "source": "/images/services/ParaChoque/Kikcs antes recuperação pára-choque .webp",
         "altImage": "Fourth Image"
+    },
+    {
+        "source": "/images/services/ParaChoque/Kikcs depois recuperação pára-choque .webp",
+        "altImage": "Fifith Image"
+    },
+    {
+        "source": "/images/services/ParaChoque/Recuperação-pára-choque-_1_.webp",
+        "altImage": "Sixth Image "
+    },
+    {
+        "source": "/images/services/ParaChoque/Recuperação-pára-choque-.webp",
+        "altImage": "Seventh Image "
     }
 ]

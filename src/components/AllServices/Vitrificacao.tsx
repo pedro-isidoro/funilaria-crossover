@@ -1,5 +1,5 @@
 import { ImageSwiper } from "@/components/Swiper/Swiper"
-import imageArray from '@/json/funilariaExpress.json'
+import imageArray from '@/json/polimento.json'
 import { Services } from "./Services"
 import { GsapServicesFunction } from "@/ts/GsapServicesFunction"
 

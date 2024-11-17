@@ -12,11 +12,19 @@
         "altImage": "Third Image"
     },
     {
-        "source": "/images/services/microRetoque/BMW-Pintura-pronta-pára-choque-.webp",
+        "source": "/images/services/microRetoque/BMW-Pintura-pronta-pára-choque-_1_.webp",
         "altImage": "Fourth Image"
     },
     {
-        "source": "/images/services/microRetoque/BMW-Pintura-pronta-pára-choque-_1_.webp",
+        "source": "/images/services/microRetoque/BMW-Pintura-pronta-pára-choque-.webp",
         "altImage": "Fifith Image"
+    },
+    {
+        "source": "/images/services/microRetoque/Micropintura.webp",
+        "altImage": "Sixth Image"
+    },
+    {
+        "source": "/images/services/microRetoque/Depois-micro-retoque-pára-choque-_1_.webp",
+        "altImage": "Seventh Image"
     }
 ]

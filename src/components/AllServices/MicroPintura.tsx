@@ -2,6 +2,8 @@ import { ImageSwiper } from "@/components/Swiper/Swiper"
 import imageArray from '@/json/microRetoque.json'
 import { Services } from "./Services"
 import { GsapServicesFunction } from "@/ts/GsapServicesFunction"
+import { VideoSwiper } from "@/components/Swiper/VideoSwiper"
+import videoArray from '@/json/videos/micro.json'
 
 export const MicroPintura = () => {
     GsapServicesFunction({trigger: ".serviceItem_text_section"})
@@ -36,6 +38,8 @@ export const MicroPintura = () => {
             </div>
             <h2>Galeria de Imagens</h2>
             <ImageSwiper DataArray={imageArray} />
+            <h2>Galeria de Vídeos</h2>
+            <VideoSwiper DataArray={videoArray} />
             <Services />
         </section>
     )

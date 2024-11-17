@@ -32,6 +32,40 @@
                     height: 100%; // Adapta a altura ao card
                     object-fit: cover; // Garante que a imagem seja proporcional dentro do espaço
                 }
+
+                .video-element {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    cursor: pointer;
+                }
+
+                .play-button {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    border: none;
+                    border-radius: 1rem;
+                    padding-left: 0.2rem;
+                    cursor: pointer;
+                    background-color: var(--secundary-color);
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    & .playIcon{
+                        font-size: 2.5rem;
+                        color: var(--primary-color);
+                    }
+                }
             }
         }
     }

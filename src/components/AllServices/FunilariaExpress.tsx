@@ -1,7 +1,9 @@
 import { ImageSwiper } from "@/components/Swiper/Swiper"
-import imageArray from '@/json/funilariaExpress.json'
 import { Services } from "./Services"
+import imageArray from '@/json/funilariaExpress.json'
 import { GsapServicesFunction } from "@/ts/GsapServicesFunction"
+import { VideoSwiper } from "@/components/Swiper/VideoSwiper"
+import videoArray from '@/json/videos/funilaria.json'
 
 export const FunilariaExpress = () => {
     GsapServicesFunction({trigger: ".serviceItem_text_section"})
@@ -26,6 +28,8 @@ export const FunilariaExpress = () => {
             </div>
             <h2>Galeria de Imagens</h2>
             <ImageSwiper DataArray={imageArray} />
+            <h2>Galeria de Vídeos</h2>
+            <VideoSwiper DataArray={videoArray} />
             <Services />
         </section>
     )
