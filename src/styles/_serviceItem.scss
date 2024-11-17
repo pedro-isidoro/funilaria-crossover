@@ -131,22 +131,22 @@
     padding: 1rem;
 
     & h5 {
-        font-size: 1.6rem;
+        font-size: 2rem;
         padding: 0 0.5rem;
         background: var(--quaternary-color);
     }
 
-        & p {
-            font-size: 1.6rem;
-    
-            @include respond-to(medium) {
-                font-size: 1.9rem;
-            }
-    
-            @include respond-to(large) {
-                font-size: 2.2rem;
-            }
+    & p {
+        font-size: 1.6rem;
+
+        @include respond-to(medium) {
+            font-size: 1.9rem;
         }
+
+        @include respond-to(large) {
+            font-size: 2.2rem;
+        }
+    }
 
     & ul {
         @include displayFlex(column, center, start);
