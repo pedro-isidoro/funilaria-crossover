@@ -17,7 +17,7 @@ export const VideoSwiper = ({ DataArray }: { DataArray: VideoInfo[] }) => {
                                     src={data.source}
                                     className="video-element"
                                     muted
-                                    preload="metadata"
+                                    preload="auto"
                                     controls
                                 >
                                     Seu navegador não suporta vídeos.
