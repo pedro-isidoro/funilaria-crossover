@@ -1,7 +1,7 @@
 // Carrossel
 .section_videoSwiper {
     @include displayFlex(row, center, center);
-    width: 100%;
+    width: 90%;
     position: relative;
 
     & .videoSwiper_list {
