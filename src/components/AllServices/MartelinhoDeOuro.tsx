@@ -26,8 +26,12 @@ export const MartelinhoDeOuro = () => {
             </div>
             <h2>Galeria de Imagens</h2>
             <ImageSwiper DataArray={imageArray} />
-            <h2>Galeria de Vídeos</h2>
-            <VideoSwiper DataArray={videoArray} />
+            {videoArray.length > 1 ? (
+                <>
+                    <h2>Galeria de Vídeos</h2>
+                    <VideoSwiper DataArray={videoArray} />
+                </>
+            ) : (<></>)}
             <Services />
         </section>
     )
