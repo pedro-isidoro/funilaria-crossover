@@ -1,5 +1,5 @@
 import 'swiper/swiper-bundle.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface VideoInfo {
     source: string;
@@ -7,6 +7,8 @@ interface VideoInfo {
 
 export const VideoSwiper = ({ DataArray }: { DataArray: VideoInfo[] }) => {
     const [loadedVideos, setLoadedVideos] = useState<boolean[]>(new Array(DataArray.length).fill(false));
+
+    const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
     // Função para carregar o vídeo quando ele se tornar visível
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
@@ -28,8 +30,9 @@ export const VideoSwiper = ({ DataArray }: { DataArray: VideoInfo[] }) => {
         });
 
         // Adicionar os vídeos ao observador
-        const videoElements = document.querySelectorAll('.video-element');
-        videoElements.forEach((video) => observer.observe(video));
+        videoRefs.current.forEach((video) => {
+            if (video) observer.observe(video);
+        });
 
         // Limpar o observador ao desmontar o componente
         return () => observer.disconnect();
@@ -43,12 +46,12 @@ export const VideoSwiper = ({ DataArray }: { DataArray: VideoInfo[] }) => {
                         <li key={index} className="videoSwiper_item">
                             <div className="videoSwiper_card">
                                 <video
+                                    ref={(el) => (videoRefs.current[index] = el)}  // Atribuindo ref ao vídeo
                                     className="video-element"
                                     muted
                                     preload="auto"
                                     controls
-                                    // Só definir o 'src' quando o vídeo for carregado
-                                    src={loadedVideos[index] ? data.source : ''}
+                                    src={loadedVideos[index] ? data.source : ''} // Só definir o 'src' quando o vídeo for carregado
                                 >
                                     Seu navegador não suporta vídeos.
                                 </video>
