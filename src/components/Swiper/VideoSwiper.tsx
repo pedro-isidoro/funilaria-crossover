@@ -6,27 +6,28 @@ interface VideoInfo {
 }
 
 export const VideoSwiper = ({ DataArray }: { DataArray: VideoInfo[] }) => {
-    const [loadedVideos, setLoadedVideos] = useState<boolean[]>(new Array(DataArray.length).fill(false));
+    const [loadedVideos, setLoadedVideos] = useState<Record<number, boolean>>({}); // Estado para rastrear quais vídeos foram carregados
     const videoRefs = useRef<(HTMLVideoElement | null)[]>([]); // Armazena referências para cada vídeo
 
     // Função para carregar o vídeo quando ele se tornar visível
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
         entries.forEach((entry) => {
-            const index = videoRefs.current.findIndex((video) => video === entry.target);
-            if (entry.isIntersecting && index !== -1) {
-                console.log(`Vídeo visível no índice ${index}`);
-                setLoadedVideos((prevState) => {
-                    const newState = [...prevState];
-                    newState[index] = true;
-                    return newState;
-                });
+            if (entry.isIntersecting) {
+                const index = videoRefs.current.findIndex((video) => video === entry.target);
+                if (index !== -1 && !loadedVideos[index]) {
+                    console.log(`Vídeo visível no índice ${index}`);
+                    setLoadedVideos((prevState) => ({
+                        ...prevState,
+                        [index]: true, // Marca o vídeo como carregado
+                    }));
+                }
             }
         });
     };
 
     useEffect(() => {
         const observer = new IntersectionObserver(handleIntersection, {
-            rootMargin: '500px', // Aumenta a margem para carregar vídeos mais cedo
+            rootMargin: '500px', // Carrega vídeos antes de entrarem na tela
         });
 
         // Adicionar os vídeos ao observador
