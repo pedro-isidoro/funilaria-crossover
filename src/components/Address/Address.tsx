@@ -14,7 +14,7 @@ export const Address = () => {
                 </div>
                 <div className="second_address">
                     <h3>Loja 2 </h3>
-                    <p>Avenida Paulo Afonso, 756 B. – Nova Petrópolis<br/>São Bernardo do Campo<br/>Fone: (11) 2356-4622</p>
+                    <p>Avenida Paulo Afonso, 756 B. – Nova Petrópolis<br />São Bernardo do Campo<br />Fone: (11) 2356-4616</p>
                     <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14612.411816009095!2d-46.54398705894437!3d-23.70801721431931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4188167facb5%3A0x8d703f9fcc94189!2sAv.%20Paulo%20Afonso%2C%20756%20-%20Nova%20Petr%C3%B3polis%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009770-351!5e0!3m2!1spt-BR!2sbr!4v1729788267059!5m2!1spt-BR!2sbr" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="map_iframe" />
                 </div>
             </div>
