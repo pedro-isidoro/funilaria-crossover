@@ -14,7 +14,7 @@ export const Home = () => {
     <section className="home_container">
       <section className="section_introducing">
         <h2>AGENDE AGORA O SEU REPARO EXPRESS</h2>
-        <h2>SEU CARRO PODERÁ fICAR PRONTO NO MESMO DIA</h2>
+        <h2>SEU CARRO PRONTO NO MESMO DIA <span>*</span></h2>
         {/* <h2>SERVIÇOS ESPECIALIZADOS EM FUNILARIA EXPRESS</h2>
         <p>Temos os melhores profissionais do mercado e tecnologia de ponta, com homologação de grandes empresas e parceiros como a 3M e a PPG</p> */}
       </section>

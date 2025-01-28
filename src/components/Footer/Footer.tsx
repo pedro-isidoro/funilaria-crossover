@@ -23,6 +23,7 @@ export const Footer = () => {
       </section>
       <section className="footer_finalText_section">
         <p><FaRegCopyright className="CopyRightIcon"/>TODOS OS DIREITOS RESERVADOS - 2024</p>
+        <p className="disclaimer"><span>*</span> Os resultados de entrega dependem de diversos fatores, assim pondendo-se demorar mais tempo para ficar pronto.</p>
       </section>
     </footer>
   )
