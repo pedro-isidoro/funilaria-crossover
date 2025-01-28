@@ -11,9 +11,8 @@ export const Footer = () => {
         <nav className="footer_navegation">
           <Link to={"/"} className="footer_navegation_item">Home</Link>
           <Link to={"/quem-nos-somos"} className="footer_navegation_item">Quem Somos</Link>
-          <a href="#services"  className="footer_navegation_item" aria-label="Link to Services Section">Reparos</a>
-          <a href="#services"  className="footer_navegation_item" aria-label="Link to Services Section">Estilização</a>
           <Link to={"/enderecos"} className="footer_navegation_item">Endereços</Link>
+          <Link to={"/politica-de-privacidade"} className="footer_politica_item" onClick={()=>{console.log("clicado")}}>Política Privacidade</Link>
         </nav>
         <div className="footer_second_section">
           <ul className="nets">

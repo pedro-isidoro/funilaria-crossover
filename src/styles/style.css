@@ -68,14 +68,23 @@
 
 .header_infos {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: end;
-  align-items: center;
+  align-items: end;
   gap: 2rem;
   width: 100%;
 }
+@media (min-width: 600px) {
+  .header_infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+  }
+}
 .header_infos .header_infos_item {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--primary-color);
 }
 @media (min-width: 768px) {
@@ -84,7 +93,7 @@
   }
 }
 .header_infos .header_infos_item span {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center;
   color: var(--whats-color);
 }
@@ -115,10 +124,10 @@
   justify-content: center;
   align-items: end;
   position: absolute;
-  top: 2.5rem;
+  top: 6.5rem;
   right: -1rem;
-  height: 26rem;
-  width: 65%;
+  height: 20rem;
+  width: 16rem;
   z-index: 4;
   padding: 1rem;
   background: #000;
@@ -126,6 +135,12 @@
 }
 .menu_navegation .closeIcon {
   font-size: 4rem;
+}
+@media (min-width: 600px) {
+  .menu_navegation {
+    top: 2.5rem;
+    height: 20rem;
+  }
 }
 
 .menu_navegation_items {
@@ -224,13 +239,15 @@
   }
 }
 .section_introducing h2 {
-  font-size: 1.2rem;
-}
-.section_introducing h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: var(--primary-color);
   position: relative;
   padding: 1rem;
+}
+@media (min-width: 1024px) {
+  .section_introducing h2 {
+    font-size: 2.5rem;
+  }
 }
 .section_introducing p {
   padding: 0 1rem;
@@ -1541,6 +1558,13 @@
   width: 35rem;
   height: 25rem;
 }
+.addresses .first_address .paragrafo_politica_de_privacidade, .addresses .second_address .paragrafo_politica_de_privacidade {
+  width: 80%;
+  text-align: justify;
+  font-size: large;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
 
 .address_services_section {
   margin-top: 3rem;
@@ -1642,6 +1666,14 @@
 .footer_navegation .footer_navegation_item:hover {
   cursor: pointer;
   color: var(--terciary-color);
+}
+.footer_navegation .footer_politica_item {
+  font-size: 1.6rem;
+  color: var(--terciary-color);
+}
+.footer_navegation .footer_politica_item:hover {
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
 .nets {

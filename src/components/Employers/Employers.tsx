@@ -42,7 +42,10 @@ export const Employers = () => {
           <img src="/images/team/zeca-2.webp" alt="Employer Image 2" />
           <div className="employer_card_texts">
             <h2>Zeca</h2>
-            <p>Somos comprometidos com nossos clientes.<br/><br/>Entendemos que nos dias de hoje cada vez mais corrido e falta de tempo, montamos uma equipe comprometida com de entregar nossos trabalhos rápido e com qualidade.<br/><br/>E vem dando muito certo, recebemos muitos Feedbacks e elogios de nossos clientes. Veja a baixo alguns depoimentos</p>
+            <p>Entendemos que, nos dias de hoje, a correria e a falta de tempo são desafios constantes.<br /><br />Por
+              isso, montamos uma equipe comprometida em entregar nossos trabalhos de forma rápida e
+              com qualidade.<br /><br />E o resultado tem sido muito positivo! Recebemos inúmeros feedbacks e elogios de nossos
+              clientes.</p>
           </div>
           <ul className="employer_card_nets">
             <li className="employer_card_net_item"><a href="https://www.instagram.com/crossoverautos/" target="_blank" className="instagram Link" aria-label="Folow us in our social media"><FaInstagram className="insta" /></a></li>

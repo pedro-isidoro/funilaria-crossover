@@ -65,6 +65,15 @@
             color: var(--terciary-color);
         }
     }
+    & .footer_politica_item {
+        font-size: 1.6rem;
+        color: var(--terciary-color);
+
+        &:hover {
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+    }
 }
 
 .nets{
